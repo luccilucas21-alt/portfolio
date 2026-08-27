@@ -211,6 +211,46 @@
 
         <!-- Projects Grid -->
         <div class="projects-grid">
+          <!-- Théâtre Liberté — chantier de troisième année, carte large -->
+          <div class="project-card flagship" data-context="entreprise" data-tags="gtb loytec"
+            data-project="theatre-liberte" onclick="openProjectModal('theatre-liberte')" style="cursor: pointer;">
+            <div class="project-image">
+              <img src="assets/img/theatre-liberte-synoptique.png"
+                alt="Synoptique de supervision de la centrale de traitement d'air du hall du Théâtre Liberté">
+              <div class="project-overlay">
+                <span class="project-context">Entreprise</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Théâtre Liberté — reprise complète de la régulation</h3>
+              <div class="project-competences">
+                <a href="#concevoir-n3" class="competence-badge concevoir" onclick="event.stopPropagation();">
+                  <i class="fas fa-drafting-compass"></i> Concevoir N3
+                </a>
+                <a href="#verifier-n3" class="competence-badge verifier" onclick="event.stopPropagation();">
+                  <i class="fas fa-check-double"></i> Vérifier N3
+                </a>
+                <a href="#maintenir-n3" class="competence-badge maintenir" onclick="event.stopPropagation();">
+                  <i class="fas fa-tools"></i> Maintenir N3
+                </a>
+                <a href="#integrer-n3" class="competence-badge integrer" onclick="event.stopPropagation();">
+                  <i class="fas fa-plug"></i> Intégrer N3
+                </a>
+              </div>
+              <p>Remplacement d'un parc Sauter obsolète par des automates Loytec, des schémas électriques à la
+                mise en service : 242 points, 34 programmes, 6 centrales de traitement d'air et le groupe froid.</p>
+              <div class="project-tags">
+                <span class="tag">L-Studio</span>
+                <span class="tag">LINX-215</span>
+                <span class="tag">Régulation PI</span>
+                <span class="tag">Supervision</span>
+              </div>
+            </div>
+          </div>
+
           <!-- Project Card 1 -->
           <div class="project-card" data-context="universitaire" data-tags="python arduino">
             <div class="project-image">
@@ -302,6 +342,78 @@
               <div class="project-tags">
                 <span class="tag">Sauter</span>
                 <span class="tag">GTC/GTB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boatie (Paris) — prestation limitée à la programmation -->
+          <div class="project-card" data-context="entreprise" data-tags="gtb loytec" data-project="boatie"
+            onclick="openProjectModal('boatie')" style="cursor: pointer;">
+            <div class="project-image placeholder-img">
+              <i class="fas fa-code"></i>
+              <div class="project-overlay">
+                <span class="project-context">Entreprise</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Boatie — programmation d'une CTA</h3>
+              <p>Programme complet d'une centrale de traitement d'air sous L-Studio, livré seul : le client
+                réalisait l'installation. Présentation au client et diagnostic à distance.</p>
+              <div class="project-tags">
+                <span class="tag">L-Studio</span>
+                <span class="tag">Paris</span>
+                <span class="tag">Relation client</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bibliothèque de programmes et de blocs fonctionnels -->
+          <div class="project-card" data-context="entreprise" data-tags="loytec" data-project="bibliotheque"
+            onclick="openProjectModal('bibliotheque')" style="cursor: pointer;">
+            <div class="project-image placeholder-img">
+              <i class="fas fa-cubes"></i>
+              <div class="project-overlay">
+                <span class="project-context">Entreprise</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Bibliothèque de programmes réutilisables</h3>
+              <p>Projet L-Studio dédié, rangé par type de centrale et par particularité. Un nouveau chantier
+                repart de ces programmes au lieu de tout réécrire.</p>
+              <div class="project-tags">
+                <span class="tag">L-Studio</span>
+                <span class="tag">Blocs fonctionnels</span>
+                <span class="tag">Capitalisation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Saint-Cyr-les-Lecques — bâtiment communal -->
+          <div class="project-card" data-context="entreprise" data-tags="gtb loytec" data-project="saint-cyr"
+            onclick="openProjectModal('saint-cyr')" style="cursor: pointer;">
+            <div class="project-image placeholder-img">
+              <i class="fas fa-triangle-exclamation"></i>
+              <div class="project-overlay">
+                <span class="project-context">Entreprise</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Saint-Cyr-les-Lecques — bâtiment communal</h3>
+              <p>Chantier mené malgré un écran de supervision détruit avant la mise en service, et un nombre
+                de liaisons Modbus supérieur à ce que le dossier annonçait.</p>
+              <div class="project-tags">
+                <span class="tag">L-Vis</span>
+                <span class="tag">Modbus</span>
+                <span class="tag">Aléa chantier</span>
               </div>
             </div>
           </div>
@@ -567,7 +679,7 @@
 
                 <details class="level-more" open>
                   <summary>
-                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-proof-count">2 preuves</span>
                     <span class="level-more-toggle" aria-hidden="true"></span>
                   </summary>
                 <div class="level-projects">
@@ -577,8 +689,14 @@
                       <i class="fas fa-arrow-right"></i> En savoir plus
                     </button>
                   </div>
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Rapport d'alternance BUT 3 — architecture retenue et reprise des plans</span>
+                    <a class="btn-savoir-plus" href="assets/docs/rapport-alternance-but3.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le rapport
+                    </a>
+                  </div>
                 </div>
-                </details>
+</details>
               </div>
             </div>
           </div>
@@ -760,7 +878,7 @@
 
                 <details class="level-more" open>
                   <summary>
-                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-proof-count">2 preuves</span>
                     <span class="level-more-toggle" aria-hidden="true"></span>
                   </summary>
                 <div class="level-projects">
@@ -770,8 +888,14 @@
                       <i class="fas fa-arrow-right"></i> En savoir plus
                     </button>
                   </div>
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Rapport d'alternance BUT 3 — campagne d'essais de mise en service</span>
+                    <a class="btn-savoir-plus" href="assets/docs/rapport-alternance-but3.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le rapport
+                    </a>
+                  </div>
                 </div>
-                </details>
+</details>
               </div>
             </div>
           </div>
@@ -903,7 +1027,7 @@
 
                 <details class="level-more" open>
                   <summary>
-                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-proof-count">2 preuves</span>
                     <span class="level-more-toggle" aria-hidden="true"></span>
                   </summary>
                 <div class="level-proof-shots">
@@ -929,8 +1053,14 @@
                       <i class="fas fa-arrow-right"></i> Voir le rapport
                     </a>
                   </div>
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Rapport d'alternance BUT 3 — supervision, alarmes et accès distant</span>
+                    <a class="btn-savoir-plus" href="assets/docs/rapport-alternance-but3.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le rapport
+                    </a>
+                  </div>
                 </div>
-                </details>
+</details>
               </div>
             </div>
           </div>
@@ -993,7 +1123,7 @@
 
                 <details class="level-more" open>
                   <summary>
-                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-proof-count">2 preuves</span>
                     <span class="level-more-toggle" aria-hidden="true"></span>
                   </summary>
                 <div class="level-projects">
@@ -1003,8 +1133,14 @@
                       <i class="fas fa-arrow-right"></i> Voir le rapport
                     </a>
                   </div>
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Rapport d'alternance BUT 3 — mise en service du Théâtre Liberté</span>
+                    <a class="btn-savoir-plus" href="assets/docs/rapport-alternance-but3.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le rapport
+                    </a>
+                  </div>
                 </div>
-                </details>
+</details>
               </div>
               <div class="level-item level-detailed" id="integrer-n3" data-niveau="3">
                 <div class="level-header">
@@ -1051,7 +1187,7 @@
 
                 <details class="level-more" open>
                   <summary>
-                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-proof-count">2 preuves</span>
                     <span class="level-more-toggle" aria-hidden="true"></span>
                   </summary>
                 <div class="level-projects">
@@ -1061,8 +1197,14 @@
                       <i class="fas fa-arrow-right"></i> Voir le compte-rendu
                     </a>
                   </div>
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Rapport d'alternance BUT 3 — coordination des acteurs du chantier</span>
+                    <a class="btn-savoir-plus" href="assets/docs/rapport-alternance-but3.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le rapport
+                    </a>
+                  </div>
                 </div>
-                </details>
+</details>
               </div>
             </div>
           </div>
@@ -1118,7 +1260,7 @@
             </div>
             <div class="experience-content">
               <h3>Technicien GTC/GTB</h3>
-              <p class="company"><i class="fas fa-building"></i> Solutions Regul Concept — Nice (06)</p>
+              <p class="company"><i class="fas fa-building"></i> Solutions Regul Concept — Saint-Laurent-du-Var (06)</p>
               <p>Développement, programmation et mise en service de systèmes de Gestion Technique Centralisée pour le
                 pilotage des équipements techniques de bâtiments (CVC, éclairage, sécurité).</p>
               <p>Ce poste fait suite à mon alternance chez Eurevia : l'équipe avec laquelle je travaillais a quitté
@@ -1137,9 +1279,14 @@
                 <span class="tag">Modbus</span>
                 <span class="tag">GTC/GTB</span>
               </div>
-              <a href="#projets" class="btn-voir-projets" onclick="filterEntrepriseProjects(event)">
-                <i class="fas fa-briefcase"></i> Voir projets entreprise
-              </a>
+              <div class="experience-actions">
+                <a href="#projets" class="btn-voir-projets" onclick="filterEntrepriseProjects(event)">
+                  <i class="fas fa-briefcase"></i> Voir projets entreprise
+                </a>
+                <a href="assets/docs/rapport-alternance-but3.pdf" class="btn-secondary" target="_blank" rel="noopener">
+                  <i class="fas fa-file-pdf"></i> Rapport d'alternance BUT 3
+                </a>
+              </div>
             </div>
           </div>
 
@@ -1718,6 +1865,144 @@
 
     // Project data for modals
     const projectsData = {
+      'theatre-liberte': {
+        title: 'Théâtre Liberté — reprise complète de la régulation',
+        context: 'Entreprise',
+        tags: ['Loytec L-Studio', 'LINX-215', 'L-IOB', 'Régulation PI', 'Free-cooling', 'Supervision'],
+        pdfUrls: [
+          { label: "Rapport d'alternance BUT 3 — le chantier en détail", url: './assets/docs/rapport-alternance-but3.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> chantier de troisième année d'alternance chez Solutions Regul Concept, de mars à juillet 2026. Client final : la métropole Toulon Provence Méditerranée, en sous-traitance de Frigevar.</p>
+          <p><strong>État initial :</strong> le bâtiment était déjà régulé, par des automates Sauter devenus obsolètes dont une partie des équipements ne répondait plus. L'exploitant n'avait pas d'outil de conduite.</p>
+          <p><strong>Périmètre :</strong> six centrales de traitement d'air, l'unité de traitement d'air des loges, l'extracteur du hall, le groupe froid et deux VMC. Le comptage et l'éclairage ont été reportés à une seconde phase.</p>
+          <p><strong>Données d'entrée :</strong> le dossier d'exécution seul — les schémas électriques, au format papier et PDF. Tout le reste était à construire.</p>
+        `,
+        interventions: `
+          <ul>
+            <li><strong>Analyse des schémas électriques :</strong> lecture équipement par équipement, relevé des contraintes signalées par le dessinateur (conversion 0-10 V vers 4-20 mA sur la puissance du groupe froid, perturbations du variateur de l'extracteur).</li>
+            <li><strong>Reprise des plans sous CorelDRAW :</strong> une seconde visite du site a révélé du matériel absent ou remplacé. Points déplacés d'un module à l'autre, plans corrigés puis remis au client.</li>
+            <li><strong>Déclaration et typage des points :</strong> 242 entrées/sorties sous L-Studio. Chaque point reçoit sa table de conversion et son unité — NTC10K pour les sondes, Ouvert/Fermé pour les volets, 0-100 % pour la puissance. Vérification ligne à ligne contre le schéma.</li>
+            <li><strong>Régulation en cascade :</strong> deux régulateurs PI successifs, l'ambiance calculant la consigne de soufflage. Séquence à plage partagée : V3V froide de 0 à 45 %, bande morte de 45 à 55 %, gradateur de 55 à 100 % — les deux batteries ne peuvent jamais travailler ensemble.</li>
+            <li><strong>Ventilation à la demande :</strong> bascule petite/grande vitesse sur le taux de CO₂ de reprise, consigne réglable depuis l'imagerie (800 ppm à l'initialisation), hystérésis de 50 ppm et temporisation de 30 s pour écarter les variations brèves.</li>
+            <li><strong>Volet de mélange :</strong> free-cooling et free-heating sur trois centrales. Le besoin du local est croisé avec la disponibilité de l'air extérieur ; un bloc MAX arbitre entre la demande thermique et la demande de renouvellement d'air.</li>
+            <li><strong>Groupe froid :</strong> passage de la régulation d'air à la régulation d'eau. Sécurité positive au câblage, pressostat de manque d'eau conditionnant les trois modes, puissance plafonnée en régime réduit.</li>
+            <li><strong>Imageries de supervision :</strong> synoptique par installation, page de consignes modifiables en ligne, grille horaire hebdomadaire, courbes d'historisation (quatre à cinq grandeurs par centrale).</li>
+            <li><strong>Mise en service sur site :</strong> cinq jours, en binôme. Entrées testées une à une — sondes débranchées pour vérifier le point associé, contact de débit sollicité, antigel déclenché. Sens d'action de chaque organe forcé, logique éprouvée par simulation de températures et de CO₂.</li>
+          </ul>
+          <figure class="modal-figure">
+            <img src="assets/img/theatre-liberte-mise-en-service.jpg"
+              alt="Centrale de traitement d'air du Théâtre Liberté en local technique, pendant la mise en service">
+            <figcaption>Mise en service sur site. Les locaux techniques laissent peu de place : l'accès à certains équipements impose de descendre une échelle, puis de passer entre les tuyauteries des batteries froides et les gaines.</figcaption>
+          </figure>
+        `,
+        resultats: `
+          <ul>
+            <li><strong>242 points</strong> déclarés et <strong>34 programmes</strong> écrits, sur 1 automate LINX-215, 7 contrôleurs L-IOB et 7 modules d'extension</li>
+            <li><strong>Conception en une à deux semaines</strong>, mise en service en cinq jours — tenue par la réutilisation des blocs et des imageries d'une centrale à l'autre</li>
+            <li>Installation remise en fonctionnement fiable : chaque équipement de terrain remonte son état, un défaut de sonde ou de variateur se repère depuis l'écran sans démontage</li>
+            <li>Supervision unique avec alarmes centralisées, grille horaire modifiable en ligne, historiques de courbes et accès distant</li>
+            <li>La campagne d'essais a <strong>révélé des matériels défaillants jusque-là invisibles</strong> — sondes muettes, moteurs de volet bloqués — consignés pour remplacement</li>
+            <li><strong>Réserve honnête :</strong> aucun gain énergétique n'est chiffré sur ce chantier. Le comptage relève de la seconde phase, donc rien n'est mesuré. Les fonctions livrées (réduit en inoccupation, ventilation à la demande, free-cooling) vont dans ce sens, sans preuve chiffrée à ce stade.</li>
+          </ul>
+        `,
+        ressenti: `
+          <p><strong>Ce que j'ai aimé :</strong> couvrir la chaîne entière sur un même bâtiment, de la lecture des schémas à la mise en service. C'est le seul chantier de l'année où j'ai tenu toutes les étapes, et c'est là qu'on voit si le raisonnement tient.</p>
+          <p><strong>Difficultés rencontrées :</strong> ce qu'un plan ne montre pas. Une partie des locaux techniques laisse peu de place : descendre une échelle, se baisser entre les tuyauteries des batteries froides et les gaines. J'évalue désormais la difficulté d'accès avant de partir, au même titre que le programme à charger.</p>
+          <p><strong>Ce que ça m'a appris :</strong> un chantier est aussi une affaire de personnes. Le technicien d'entretien du bâtiment a été mon interlocuteur le plus constant — il sait quelle salle porte quel nom et quel équipement ne fonctionne plus. La relation s'est inversée à la mise en service, où je lui ai présenté la supervision.</p>
+        `
+      },
+      'boatie': {
+        title: "Boatie — programmation d'une centrale de traitement d'air",
+        context: 'Entreprise',
+        tags: ['Loytec L-Studio', 'Régulation', 'Relation client', 'Paris'],
+        pdfUrls: [
+          { label: "Rapport d'alternance BUT 3 — retour sur ce chantier", url: './assets/docs/rapport-alternance-but3.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> chantier parisien, en troisième année d'alternance. La prestation vendue se limitait à la programmation : le client réalisait lui-même l'installation.</p>
+          <p><strong>Particularité :</strong> aucune mise en service de notre côté, donc aucun accès au matériel. Le programme devait être juste sans possibilité de l'éprouver sur site.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Écriture de l'intégralité du programme de la centrale de traitement d'air sous L-Studio</li>
+            <li>Présentation du programme au client, à distance, et réponses à ses questions</li>
+            <li>Diagnostic en direct pendant l'appel : un défaut empêchait le démarrage de la centrale</li>
+            <li>Correction pendant l'échange — j'avais inversé une logique de défaut, contre la convention de sécurité positive où la valeur 1 correspond à l'état normal</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Programme livré et centrale démarrée, l'erreur ayant été corrigée pendant l'appel</li>
+            <li>Premier exercice de présentation technique à un client, seul face à lui</li>
+          </ul>
+        `,
+        ressenti: `
+          <p><strong>Ce que j'en retiens :</strong> deux choses, et la situation était inconfortable sur le moment. La rigueur dans le respect des conventions de câblage n'est pas une formalité — une inversion sur un défaut bloquant suffit à interdire un démarrage. Et diagnostiquer sous pression tout en gardant une communication claire avec le client, ça s'apprend en situation, pas en cours.</p>
+          <p><strong>Pourquoi ce projet figure ici :</strong> parce qu'il s'est mal passé avant de bien se terminer. C'est celui qui m'a le plus appris.</p>
+        `
+      },
+      'bibliotheque': {
+        title: 'Bibliothèque de programmes et de blocs fonctionnels',
+        context: 'Entreprise',
+        tags: ['Loytec L-Studio', 'Blocs fonctionnels', 'IEC 61131', 'Capitalisation'],
+        pdfUrls: [
+          { label: "Rapport d'alternance BUT 3 — prolongements et méthodes", url: './assets/docs/rapport-alternance-but3.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> l'idée revient à mon maître d'apprentissage, la réalisation m'a été confiée. L'entreprise dispose désormais d'un projet L-Studio distinct qui ne sert qu'à la bibliothèque.</p>
+          <p><strong>Le problème :</strong> chaque chantier repartait d'une page blanche, alors que les centrales de traitement d'air se ressemblent d'un bâtiment à l'autre. Le même travail était refait, avec les mêmes risques d'erreur.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Montage du projet dédié et rédaction des blocs, dont les comparateurs à hystérésis Limite_Bas et Limite_Haut employés dans toutes les régulations de l'entreprise</li>
+            <li>Rangement des programmes par type de centrale et par particularité : volet de mélange, roue de récupération, pompe à chaleur</li>
+            <li>Symboles d'imagerie (LWebSymbols) rattachés à leurs points de données, si bien qu'un modèle complet se glisse d'un projet à l'autre avec ses liaisons</li>
+            <li>Alimentation continue : chacun dans l'équipe y verse ses propres apports au fil des chantiers</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>En service dans l'entreprise, et utilisée sur les chantiers suivants</li>
+            <li>C'est ce qui a permis de tenir la conception du Théâtre Liberté en une à deux semaines pour 34 programmes</li>
+            <li>Sert aussi de mémoire : un type de programme laissé de côté longtemps s'y retrouve documenté par l'exemple</li>
+          </ul>
+        `,
+        ressenti: `
+          <p><strong>Ce que ça a changé pour moi :</strong> je suis passé d'une programmation refaite à chaque fois à une logique de capitalisation. Au début, je construisais de grands ensembles là où un bloc du logiciel donnait le même résultat — ma logique était juste, mais elle gagnait à être allégée. Les corrections de mes collègues m'ont rendu plus attentif à la clarté de ce que je produis.</p>
+          <p><strong>Pourquoi ça compte :</strong> c'est le seul travail de l'année qui sert à toute l'équipe et pas à un seul client.</p>
+        `
+      },
+      'saint-cyr': {
+        title: 'Saint-Cyr-les-Lecques — bâtiment communal',
+        context: 'Entreprise',
+        tags: ['Loytec L-Vis', 'Modbus', 'Imagerie', 'Aléa chantier'],
+        pdfUrls: [
+          { label: "Rapport d'alternance BUT 3 — configurations de chantier", url: './assets/docs/rapport-alternance-but3.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> bâtiment communal de Saint-Cyr-les-Lecques, dont une partie des locaux est louée à des artisans.</p>
+          <p><strong>L'aléa :</strong> une erreur de raccordement commise par l'électricien, extérieur à l'entreprise, a détruit l'écran de supervision L-Vis avant la mise en service.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Développement de l'imagerie sous L-Vis — sa conception ne dépend pas du matériel installé, elle a donc pu avancer malgré l'écran hors service</li>
+            <li>Réorganisation du chantier autour du poste bloqué, pour ne pas perdre le déplacement</li>
+            <li>Seconde intervention deux semaines plus tard, après remplacement du matériel : pose de l'écran et finalisation des communications</li>
+            <li>Reprise des liaisons Modbus, dont le nombre dépassait ce que le dossier annonçait</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Installation livrée, avec un décalage de deux semaines imputable au matériel détruit</li>
+            <li>La perte de temps a été limitée en basculant sur ce qui pouvait avancer sans le matériel</li>
+          </ul>
+        `,
+        ressenti: `
+          <p><strong>Ce que j'en retiens :</strong> un chantier ne se déroule jamais comme le dossier l'annonce. Ce qui se joue alors, c'est de savoir ce qui peut avancer sans l'élément manquant — ici l'imagerie, qui ne dépend pas du matériel. Et le dossier n'est pas la réalité : le nombre de liaisons Modbus réellement présentes ne correspondait pas à ce qui était annoncé.</p>
+          <p><strong>La dépendance aux autres corps d'état :</strong> la mise en service arrive en fin de chaîne et hérite des retards accumulés en amont. Ce n'est pas une fatalité à subir, c'est un paramètre à intégrer dans un planning.</p>
+        `
+      },
       'variateur-vitesse': {
         title: 'Variateur de Vitesse Connecté',
         context: 'Universitaire',

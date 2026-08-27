@@ -855,11 +855,41 @@ body.light-theme .project-card {
     transform: scale(1.1);
 }
 
+/* Vignette sans photo. Trois chantiers n'en ont pas : ce qui s'y est joué est
+   du programme et de la coordination, pas quelque chose qui se photographie.
+   Plutôt qu'une icône grise flottant sur un aplat — qui se lit comme une image
+   manquante — le cadre reçoit une trame et l'icône passe à l'accent : le
+   traitement devient une catégorie assumée, pas un trou. */
 .project-image.placeholder-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--surface-2);
+    background:
+        radial-gradient(circle at 30% 25%, rgba(224, 164, 88, 0.10), transparent 60%),
+        repeating-linear-gradient(135deg,
+            var(--surface-2) 0 10px,
+            var(--surface) 10px 20px);
+}
+
+.project-image.placeholder-img i {
+    font-size: 3.2rem;
+    color: var(--accent);
+    opacity: 0.55;
+    transition: all 0.4s var(--transition-smooth);
+}
+
+.project-card:hover .project-image.placeholder-img i {
+    opacity: 0.9;
+    transform: scale(1.06);
+}
+
+/* Les deux boutons de la carte d'alternance : côte à côte tant qu'il y a de
+   la place, empilés ensuite. */
+.experience-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
 }
 
 /* Vignette « schéma » : une figure tirée du compte-rendu, pas une photo. Elle
@@ -877,12 +907,6 @@ body.light-theme .project-card {
 
 .project-card:hover .project-image.schema-img img {
     transform: scale(1.04);
-}
-
-.project-image.placeholder-img i {
-    font-size: 4rem;
-    color: var(--muted);
-    opacity: 0.5;
 }
 
 .project-overlay {
@@ -2999,6 +3023,28 @@ html.js .fade-in.visible {
     .skill-card {
         height: 180px;
     }
+}
+
+/* Figure illustrant une modale projet : une photo de chantier vaut mieux
+   qu'un paragraphe de plus, à condition d'être légendée — sans légende, un
+   local technique photographié ne dit rien de ce qui s'y est joué. */
+.modal-figure {
+    margin: 22px 0 0;
+}
+
+.modal-figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    display: block;
+}
+
+.modal-figure figcaption {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--muted);
 }
 
 /* ====================== */
