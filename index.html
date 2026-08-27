@@ -1,0 +1,2130 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lucas Lucci — Portfolio</title>
+  <meta name="description"
+    content="Portfolio de compétences de Lucas Lucci — BUT GEII, parcours Automatisme et Informatique Industrielle. Projets, référentiel de compétences et trois ans d'alternance en gestion technique du bâtiment.">
+  <meta name="keywords"
+    content="GEII, portfolio, électronique, automatisme, informatique industrielle, Arduino, Python">
+  <meta name="author" content="Lucas Lucci">
+  <link rel="canonical" href="https://luccilucas21-alt.github.io/portfolio/">
+
+  <!-- Identité de l'onglet -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+  <meta name="theme-color" content="#0F1114">
+
+  <!-- Aperçu quand le lien est envoyé (mail, LinkedIn, messagerie). Les URL
+       doivent être absolues : les réseaux ne résolvent pas les chemins
+       relatifs. À modifier si l'adresse du site change. -->
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Portfolio de Lucas Lucci">
+  <meta property="og:title" content="Lucas Lucci — Portfolio de compétences">
+  <meta property="og:description"
+    content="BUT GEII, parcours Automatisme et Informatique Industrielle. Trois ans d'alternance en gestion technique du bâtiment : mise en service, supervision, diagnostic.">
+  <meta property="og:url" content="https://luccilucas21-alt.github.io/portfolio/">
+  <meta property="og:image" content="https://luccilucas21-alt.github.io/portfolio/assets/img/apercu-partage.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lucas Lucci — portfolio de compétences, BUT GEII automatisme">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="assets/vendor/fonts.css">
+  <link rel="stylesheet" href="assets/vendor/fontawesome/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#home" class="brand">
+      <div class="logo-icon">LU</div>
+      <span>Portfolio</span>
+    </a>
+
+
+    <button class="theme-toggle" id="theme-toggle" type="button"
+            aria-label="Basculer entre thème clair et sombre">
+      <i class="fas fa-moon theme-icon-dark"></i>
+      <i class="fas fa-sun theme-icon-light"></i>
+    </button>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#about">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#experience">Expérience</a>
+      <a href="#equipe">Équipe</a>
+      <a href="#formation">Formation</a>
+      <a href="#projeter">Se projeter</a>
+      <a href="#contact" class="btn-contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <div class="hero-container" id="home">
+    <img src="assets/img/fond-hero.jpg" class="hero-bg-image" id="hero-bg"
+      alt="Collage personnel : ski nautique, tournage vidéo, aviation légère, pêche sur glace">
+    <div class="hero-content">
+      <h1>LUCAS<br>LUCCI</h1>
+      <div class="hero-sub">Ingénierie Système · Automatisme · Développement</div>
+      <p class="hero-synopsis">
+        Trois ans d'alternance en gestion technique du bâtiment, à faire dialoguer
+        des équipements qui ne parlent pas la même langue : automates, variateurs,
+        sondes, protocoles BACnet et Modbus. J'ai commencé par créer des imageries
+        de supervision ; je conçois aujourd'hui des architectures complètes et je
+        les mets en service sur site.
+      </p>
+      <div class="hero-cta">
+        <a href="#projets" class="btn-primary">
+          <i class="fas fa-folder-open"></i>
+          Voir mes projets
+        </a>
+        <a href="#contact" class="btn-secondary">
+          <i class="fas fa-paper-plane"></i>
+          Me contacter
+        </a>
+      </div>
+    </div>
+    <p class="hero-credit">Ski nautique, vidéo, voyage — ce qu'il y a autour du technicien.</p>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- MARQUEE TECHNOLOGIES -->
+    <div class="marquee-wrapper">
+      <div class="marquee-content" id="marquee">
+        <div class="tech-item"><span class="tech-icon tech-logo"><img src="assets/img/cpp-logo.png" class="tech-logo-img" alt="Logo ISO C++"></span><span class="name">C++</span></div>
+        <div class="tech-item"><span class="tech-icon tech-logo"><img src="assets/img/ni-labview-logo.png" class="tech-logo-img" alt="Logo NI LabVIEW"></span><span class="name">LabVIEW</span></div>
+        <div class="tech-item"><span class="tech-icon tech-logo"><img src="assets/img/kicad-logo.png" class="tech-logo-img" alt="Logo KiCad"></span><span class="name">KiCad</span></div>
+        <div class="tech-item"><span class="tech-icon tech-logo"><img src="assets/img/arduino-logo.png" class="tech-logo-img" alt="Logo Arduino"></span><span class="name">Arduino</span></div>
+        <div class="tech-item"><span class="tech-icon"><i class="fas fa-bars" style="color:#3DCD58"></i></span><span class="name">Ladder</span></div>
+        <div class="tech-item"><span class="tech-icon tech-logo"><img src="assets/img/python-logo.png" class="tech-logo-img" alt="Logo Python"></span><span class="name">Python</span></div>
+        <div class="tech-item"><span class="tech-icon tech-logo"><img src="assets/img/loytec-logo.png" class="tech-logo-img logo-on-dark" alt="Logo Loytec"></span><span class="name">Loytec L-Studio</span></div>
+        <div class="tech-item"><span class="tech-icon tech-logo"><img src="assets/img/davinci-logo.png" class="tech-logo-img" alt="Logo DaVinci Resolve"></span><span class="name">DaVinci Resolve</span></div>
+        <div class="tech-item"><span class="tech-icon tech-logo"><img src="assets/img/loytec-logo.png" class="tech-logo-img logo-on-dark" alt="Logo Loytec"></span><span class="name">Loytec L-Vis</span></div>
+        <div class="tech-item"><span class="tech-icon tech-logo"><img src="assets/img/sauter-logo.png" class="tech-logo-img" alt="Logo Sauter"></span><span class="name">Sauter</span></div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <h2 class="section-title">À propos</h2>
+
+        <div class="about-grid">
+          <div class="about-image">
+            <div class="about-image-wrapper">
+              <img src="assets/img/lucas-lucci.jpg" alt="Portrait de Lucas Lucci">
+            </div>
+          </div>
+
+          <div class="about-text">
+            <h3>Passionné par l'électronique et l'automatisme</h3>
+            <p>
+              Étudiant en dernière année de BUT GEII, parcours Automatisme et Informatique Industrielle,
+              je suis passionné par la régulation, la supervision et la mise en service d'installations. Curieux de nature, je suis de près ce
+              qui bouge du côté des nouvelles technologies, et j'aime concevoir des solutions qui allient
+              électronique et informatique.
+            </p>
+            <p>
+              Mon parcours m'a permis d'acquérir des compétences variées, de la conception de circuits
+              imprimés à la programmation d'automates, jusqu'à la mise en service d'installations sur site.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Années de formation</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">7</div>
+                <div class="stat-label">Projets réalisés</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">10</div>
+                <div class="stat-label">Technologies maîtrisées</div>
+              </div>
+            </div>
+
+            <div class="about-facts">
+              <div class="about-fact"><i class="fas fa-id-card"></i> Permis B — véhiculé</div>
+              <div class="about-fact"><i class="fas fa-location-dot"></i> Hyères (83)</div>
+            </div>
+
+            <a href="assets/docs/CV.pdf" target="_blank" rel="noopener" class="btn-secondary about-cv-link">
+              <i class="fas fa-file-arrow-down"></i>
+              Télécharger mon CV
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+          <section id="projets">
+        <h2 class="section-title">Mes Projets</h2>
+        <p class="section-subtitle">Une sélection de projets réalisés durant ma formation et en entreprise.</p>
+
+        <!-- Filter Buttons : deux axes indépendants. Contexte ET technologie —
+             sans quoi « Entreprise » et « Loytec » cochés ensemble ramenaient
+             tous les projets d'entreprise, Sauter compris, alors qu'on demande
+             du Loytec en entreprise. À l'intérieur d'un axe, les choix
+             s'additionnent (OU) ; entre les deux axes, ils se croisent (ET). -->
+        <div class="filter-buttons">
+          <div class="filter-row" role="group" aria-label="Filtrer les projets par contexte">
+            <span class="filter-legend">Contexte</span>
+            <button class="filter-btn active" data-axis="contexte" data-filter="all">Tous</button>
+            <button class="filter-btn" data-axis="contexte" data-filter="entreprise">Entreprise</button>
+            <button class="filter-btn" data-axis="contexte" data-filter="universitaire">Universitaire</button>
+            <button class="filter-btn" data-axis="contexte" data-filter="personnel">Personnel</button>
+          </div>
+          <div class="filter-row" role="group" aria-label="Filtrer les projets par technologie">
+            <span class="filter-legend">Technologie</span>
+            <button class="filter-btn active" data-axis="techno" data-filter="all">Toutes</button>
+            <button class="filter-btn" data-axis="techno" data-filter="gtb">GTC/GTB</button>
+            <button class="filter-btn" data-axis="techno" data-filter="loytec">Loytec</button>
+            <button class="filter-btn" data-axis="techno" data-filter="sauter">Sauter</button>
+            <button class="filter-btn" data-axis="techno" data-filter="schneider">Schneider</button>
+            <button class="filter-btn" data-axis="techno" data-filter="arduino">Arduino</button>
+            <button class="filter-btn" data-axis="techno" data-filter="python">Python</button>
+            <button class="filter-btn" data-axis="techno" data-filter="kicad">KiCad</button>
+            <button class="filter-btn" data-axis="techno" data-filter="web">Web</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card" data-context="universitaire" data-tags="python arduino">
+            <div class="project-image">
+              <img src="assets/img/tableau-bord-iot.png"
+                alt="Interface d'acquisition et de visualisation de données">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Tableau de Bord IoT</h3>
+              <p>Acquisition et visualisation de données</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Arduino</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5 - Placeholder -->
+          <div class="project-card" data-context="entreprise" data-tags="gtb loytec">
+            <div class="project-image">
+              <img src="assets/img/Ibis.jpg" alt="Hôtel Ibis">
+              <div class="project-overlay">
+                <span class="project-context">Entreprise</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Hôtel Ibis — Supervision</h3>
+              <p>Gestion climatique et thermostats</p>
+              <div class="project-tags">
+                <span class="tag">Loytec</span>
+                <span class="tag">GTC/GTB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 6 - Placeholder -->
+          <div class="project-card" data-context="personnel" data-tags="web">
+            <div class="project-image">
+              <img src="assets/img/portfolio-hero.jpg" alt="Page d'accueil du portfolio">
+              <div class="project-overlay">
+                <span class="project-context">Personnel</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Portfolio Personnel</h3>
+              <p>Site web moderne et interactif</p>
+              <div class="project-tags">
+                <span class="tag">Web</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 7 - Hôpital de Gap -->
+          <div class="project-card" data-context="entreprise" data-tags="gtb loytec">
+            <div class="project-image">
+              <img src="assets/img/CTA00.png" alt="Hôpital de Gap">
+              <div class="project-overlay">
+                <span class="project-context">Entreprise</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Hôpital de Gap — Blocs Opératoires</h3>
+              <p>Supervision CTA : flux d'air, surpression, alarmes médicales</p>
+              <div class="project-tags">
+                <span class="tag">Loytec</span>
+                <span class="tag">GTC/GTB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 8 - Avenue 83 -->
+          <div class="project-card" data-context="entreprise" data-tags="gtb sauter">
+            <div class="project-image">
+              <img src="assets/img/Avenue83.jpg" alt="Centre commercial l'Avenue 83">
+              <div class="project-overlay">
+                <span class="project-context">Entreprise</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Avenue 83 — Économies d'Énergie</h3>
+              <div class="project-competences">
+                <a href="#integrer-n2" class="competence-badge integrer" onclick="event.stopPropagation();">
+                  <i class="fas fa-plug"></i> Intégrer N2
+                </a>
+              </div>
+              <p>Isolation de zone : vannes 2 voies, séquencement, pompes</p>
+              <div class="project-tags">
+                <span class="tag">Sauter</span>
+                <span class="tag">GTC/GTB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 9 - Variateur de Vitesse Connecté -->
+          <div class="project-card" data-context="universitaire" data-tags="arduino kicad" data-project="variateur-vitesse"
+            onclick="openProjectModal('variateur-vitesse')" style="cursor: pointer;">
+            <div class="project-image schema-img">
+              <img src="assets/img/variateur-hacheur-psim.png"
+                alt="Schéma de simulation PSIM du hacheur : MOSFET commandé en PWM, diode de roue libre, filtre LC 600 µH / 2,31 µF et charge 7,2 Ω">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Variateur de Vitesse Connecté</h3>
+              <div class="project-competences">
+                <a href="#concevoir-n2" class="competence-badge concevoir" onclick="event.stopPropagation();">
+                  <i class="fas fa-drafting-compass"></i> Concevoir N2
+                </a>
+                <a href="#verifier-n2" class="competence-badge verifier" onclick="event.stopPropagation();">
+                  <i class="fas fa-check-double"></i> Vérifier N2
+                </a>
+              </div>
+              <p>Hacheur Pont en H pour moteur DC : dimensionnement, simulation PSIM, PWM 30kHz</p>
+              <div class="project-tags">
+                <span class="tag">KiCad</span>
+                <span class="tag">Arduino</span>
+                <span class="tag">PSIM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 10 - Robot Cartésien 2 Axes -->
+          <div class="project-card flagship" data-context="universitaire" data-tags="schneider" data-project="robot-cartesien"
+            onclick="openProjectModal('robot-cartesien')" style="cursor: pointer;">
+            <div class="project-image">
+              <img src="assets/img/robot.jpg" alt="Robot Cartésien 2 Axes">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Robot Cartésien 2 Axes</h3>
+              <div class="project-competences">
+                <a href="#concevoir-n3" class="competence-badge concevoir" onclick="event.stopPropagation();">
+                  <i class="fas fa-drafting-compass"></i> Concevoir N3
+                </a>
+                <a href="#verifier-n3" class="competence-badge verifier" onclick="event.stopPropagation();">
+                  <i class="fas fa-check-double"></i> Vérifier N3
+                </a>
+                <a href="#integrer-n3" class="competence-badge integrer" onclick="event.stopPropagation();">
+                  <i class="fas fa-plug"></i> Intégrer N3
+                </a>
+              </div>
+              <p>Deux semestres : remise en service complète, puis automatisation (homing, mode automatique, IHM tactile)</p>
+              <div class="project-tags">
+                <span class="tag">Schneider</span>
+                <span class="tag">Motion Control</span>
+                <span class="tag">LADDER</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Croiser les deux axes permet des combinaisons vides (Personnel +
+             Loytec, par exemple). Une grille qui disparaît sans un mot se lit
+             comme une page cassée. -->
+        <p class="projects-empty" id="projects-empty" role="status" hidden>
+          Aucun projet ne réunit ces filtres. Retire-en un pour élargir.
+        </p>
+      </section>
+
+      <!-- COMPETENCES SECTION -->
+      <section id="competences">
+        <h2 class="section-title">Compétences</h2>
+        <p class="section-subtitle">B.U.T. Génie Électrique et Informatique Industrielle — Parcours Automatisme</p>
+
+        <div class="competences-actions">
+          <button type="button" class="btn-deplier-tout" id="deplier-tout" aria-expanded="false" hidden>
+            Tout déplier
+          </button>
+        </div>
+
+        <div class="competences-bento">
+          <!-- CONCEVOIR -->
+          <div class="competence-card concevoir">
+            <div class="competence-header">
+              <i class="fas fa-drafting-compass"></i>
+              <h3>Concevoir</h3>
+            </div>
+            <div class="competence-levels">
+              <div class="level-item level-detailed" id="concevoir-n1" data-niveau="1">
+                <div class="level-header">
+                  <span class="level-badge">Niveau 1</span>
+                  <div class="level-eval">
+                    <span class="eval-label">Autonome</span>
+                  </div>
+                </div>
+                <p class="level-title">Mener une conception partielle intégrant une démarche projet</p>
+                <div class="level-scale" data-cran="3" role="img"
+                     aria-label="Niveau de maîtrise : Autonome, cran 3 sur 3">
+                  <div class="scale-track" aria-hidden="true">
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                  </div>
+                  <div class="scale-ticks" aria-hidden="true">
+                    <span>Découverte</span><span>Acquis</span><span class="on">Autonome</span>
+                  </div>
+                </div>
+
+                <div class="level-learnings">
+                  <h5><i class="fas fa-graduation-cap"></i> Ce que ce niveau implique :</h5>
+                  <ul>
+                    <li>Décomposer un cahier des charges en sous-ensembles fonctionnels</li>
+                    <li>Justifier les technologies retenues au regard des contraintes physiques</li>
+                    <li>Reprendre sa conception quand une contrainte nouvelle apparaît</li>
+                  </ul>
+                </div>
+                <div class="level-justification">
+                  <div class="justif-mastered">
+                    <h5><i class="fas fa-check"></i> Ce que je maîtrise :</h5>
+                    <p>Sur une chaîne de bouchonnage automatisée (TP d'automatisme, BUT 1), j'ai conçu la partie
+                      commande : décomposition du cahier des charges en quatre grafcets — mise en route des
+                      convoyeurs, tri, assemblage, éjection — puis programmation et mise en service sur un automate
+                      WAGO. J'ai justifié les technologies de détection au regard des matériaux en jeu : inductif pour
+                      les bouteilles en aluminium, infrarouge pour distinguer les bouchons plastique, capacitif pour
+                      contrôler qu'une bouteille est bien bouchée. Quand une contrainte de gestion de stock est
+                      arrivée en cours de TP — arrêter les convoyeurs et neutraliser le tri au-delà de cinq bouchons —
+                      j'ai repris les grafcets pour l'intégrer. En alternance, je conçois de la même façon les
+                      programmes de gestion technique livrés sur site.</p>
+                  </div>
+                  <div class="justif-improve">
+                    <h5><i class="fas fa-arrow-up"></i> À améliorer :</h5>
+                    <p>Le banc était déjà équipé : j'ai justifié des technologies, je ne les ai pas sélectionnées face
+                      à un catalogue. Et je travaillais sur un cahier des charges fourni — rédiger le mien, et
+                      formaliser un dossier de conception avant de programmer, reste à acquérir.</p>
+                  </div>
+                </div>
+
+                <details class="level-more" open>
+                  <summary>
+                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-more-toggle" aria-hidden="true"></span>
+                  </summary>
+                <div class="level-projects">
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Compte-rendu — Chaîne de bouchonnage (TP n° 1)</span>
+                    <a class="btn-savoir-plus" href="assets/docs/tp1-chaine-bouchonnage.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le rapport
+                    </a>
+                  </div>
+                </div>
+                </details>
+              </div>
+              <div class="level-item level-detailed" id="concevoir-n2" data-niveau="2">
+                <div class="level-header">
+                  <span class="level-badge">Niveau 2</span>
+                  <div class="level-eval">
+                    <span class="eval-label">Acquis</span>
+                  </div>
+                </div>
+                <p class="level-title">Concevoir un système en fiabilisant les solutions proposées</p>
+                <div class="level-scale" data-cran="2" role="img"
+                     aria-label="Niveau de maîtrise : Acquis, cran 2 sur 3">
+                  <div class="scale-track" aria-hidden="true">
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg"></span>
+                  </div>
+                  <div class="scale-ticks" aria-hidden="true">
+                    <span>Découverte</span><span class="on">Acquis</span><span>Autonome</span>
+                  </div>
+                </div>
+
+                <div class="level-learnings">
+                  <h5><i class="fas fa-graduation-cap"></i> Ce que ce niveau implique :</h5>
+                  <ul>
+                    <li>Dimensionner les composants avec marge de sécurité</li>
+                    <li>Valider par simulation avant réalisation</li>
+                    <li>Proposer des solutions robustes et fiables</li>
+                  </ul>
+                </div>
+                <div class="level-justification">
+                  <div class="justif-mastered">
+                    <h5><i class="fas fa-check"></i> Ce que je maîtrise :</h5>
+                    <p>Dimensionnement théorique (calcul inductance, condensateurs), simulation PSIM, choix composants
+                      avec marges de sécurité (MOSFET, drivers, diodes protection).</p>
+                  </div>
+                  <div class="justif-improve">
+                    <h5><i class="fas fa-arrow-up"></i> À améliorer :</h5>
+                    <p>Réalisation physique de l'inductance de lissage, optimisation du layout PCB pour minimiser les
+                      perturbations.</p>
+                  </div>
+                </div>
+
+                <details class="level-more" open>
+                  <summary>
+                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-more-toggle" aria-hidden="true"></span>
+                  </summary>
+                <div class="level-projects">
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-bolt"></i> Variateur de Vitesse Connecté</span>
+                    <button class="btn-savoir-plus" onclick="openProjectModal('variateur-vitesse')">
+                      <i class="fas fa-arrow-right"></i> En savoir plus
+                    </button>
+                  </div>
+                </div>
+                </details>
+              </div>
+              <div class="level-item level-detailed" id="concevoir-n3" data-niveau="3">
+                <div class="level-header">
+                  <span class="level-badge">Niveau 3</span>
+                  <div class="level-eval">
+                    <span class="eval-label">Acquis</span>
+                  </div>
+                </div>
+                <p class="level-title">Concevoir un système en adoptant une approche sélective dans ses choix
+                  technologiques</p>
+                <div class="level-scale" data-cran="2" role="img"
+                     aria-label="Niveau de maîtrise : Acquis, cran 2 sur 3">
+                  <div class="scale-track" aria-hidden="true">
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg"></span>
+                  </div>
+                  <div class="scale-ticks" aria-hidden="true">
+                    <span>Découverte</span><span class="on">Acquis</span><span>Autonome</span>
+                  </div>
+                </div>
+
+                <div class="level-learnings">
+                  <h5><i class="fas fa-graduation-cap"></i> Ce que ce niveau implique :</h5>
+                  <ul>
+                    <li>Choisir les technologies adaptées au contexte industriel</li>
+                    <li>Configurer et intégrer des équipements multi-constructeurs</li>
+                    <li>Structurer l'architecture (automate, variateurs, IHM, bus terrain)</li>
+                  </ul>
+                </div>
+                <div class="level-justification">
+                  <div class="justif-mastered">
+                    <h5><i class="fas fa-check"></i> Ce que je maîtrise :</h5>
+                    <p>Configuration variateurs LXM32 via SoMove (couple, vitesse, identification moteur), intégration
+                      bus CANopen (Node ID, Baudrate), programmation Motion Control en LADDER avec DFB (Power, Reset,
+                      Jog, Read/Write SDO), conception IHM Vijeo Designer, réalisation schémas électriques
+                      (QElectroTech).</p>
+                  </div>
+                  <div class="justif-improve">
+                    <h5><i class="fas fa-arrow-up"></i> À améliorer :</h5>
+                    <p>Trajectoires interpolées X/Y (le mode automatique actuel enchaîne des
+                      déplacements point à point), profils de mouvement avancés, et interfaçage
+                      avec des fichiers de conception DXF — piste identifiée en fin de SAÉ 6.01.</p>
+                  </div>
+                </div>
+
+                <details class="level-more" open>
+                  <summary>
+                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-more-toggle" aria-hidden="true"></span>
+                  </summary>
+                <div class="level-projects">
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-robot"></i> Robot Cartésien 2 Axes (SAÉ 5.01 et 6.01)</span>
+                    <button class="btn-savoir-plus" onclick="openProjectModal('robot-cartesien')">
+                      <i class="fas fa-arrow-right"></i> En savoir plus
+                    </button>
+                  </div>
+                </div>
+                </details>
+              </div>
+            </div>
+          </div>
+
+          <!-- VERIFIER -->
+          <div class="competence-card verifier">
+            <div class="competence-header">
+              <i class="fas fa-check-double"></i>
+              <h3>Vérifier</h3>
+            </div>
+            <div class="competence-levels">
+              <div class="level-item level-detailed" id="verifier-n1" data-niveau="1">
+                <div class="level-header">
+                  <span class="level-badge">Niveau 1</span>
+                  <div class="level-eval">
+                    <span class="eval-label">Acquis</span>
+                  </div>
+                </div>
+                <p class="level-title">Effectuer les tests et mesures nécessaires à une vérification d'un système</p>
+                <div class="level-scale" data-cran="2" role="img"
+                     aria-label="Niveau de maîtrise : Acquis, cran 2 sur 3">
+                  <div class="scale-track" aria-hidden="true">
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg"></span>
+                  </div>
+                  <div class="scale-ticks" aria-hidden="true">
+                    <span>Découverte</span><span class="on">Acquis</span><span>Autonome</span>
+                  </div>
+                </div>
+
+                <div class="level-learnings">
+                  <h5><i class="fas fa-graduation-cap"></i> Ce que ce niveau implique :</h5>
+                  <ul>
+                    <li>Mener une série d'essais pour caractériser un système</li>
+                    <li>Comparer les valeurs mesurées aux valeurs théoriques attendues</li>
+                    <li>Conclure sur la validité du modèle, y compris quand il ne tient pas</li>
+                  </ul>
+                </div>
+                <div class="level-justification">
+                  <div class="justif-mastered">
+                    <h5><i class="fas fa-check"></i> Ce que je maîtrise :</h5>
+                    <p>Sur le transformateur monophasé (TP d'électrotechnique, BUT 1), j'ai mené les trois essais
+                      classiques — à vide, en court-circuit, en charge — relevé tensions, courants, puissances active
+                      et réactive et facteurs de puissance, et déduit des mesures les éléments du schéma équivalent.
+                      J'ai ensuite confronté le modèle de Kapp calculé aux mesures réelles et conclu qu'il ne rendait
+                      pas compte de cet essai en charge. En alternance, je fais des relevés et des vérifications à
+                      chaque mise en service.</p>
+                  </div>
+                  <div class="justif-improve">
+                    <h5><i class="fas fa-arrow-up"></i> À améliorer :</h5>
+                    <p>Remonter à la cause d'un écart entre théorie et mesure : sur ce TP, j'ai constaté que le
+                      modèle ne collait pas sans pouvoir l'expliquer précisément. Et consigner mes relevés dans un
+                      document exploitable, plutôt que de valider au fil de l'eau.</p>
+                  </div>
+                </div>
+
+                <details class="level-more" open>
+                  <summary>
+                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-more-toggle" aria-hidden="true"></span>
+                  </summary>
+                <div class="level-projects">
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Compte-rendu — Transformateurs monophasés (TP n° 5)</span>
+                    <a class="btn-savoir-plus" href="assets/docs/tp5-transformateur-monophase.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le rapport
+                    </a>
+                  </div>
+                </div>
+                </details>
+              </div>
+              <div class="level-item level-detailed" id="verifier-n2" data-niveau="2">
+                <div class="level-header">
+                  <span class="level-badge">Niveau 2</span>
+                  <div class="level-eval">
+                    <span class="eval-label">Acquis</span>
+                  </div>
+                </div>
+                <p class="level-title">Mettre en place un protocole de tests pour valider le fonctionnement d'un
+                  système</p>
+                <div class="level-scale" data-cran="2" role="img"
+                     aria-label="Niveau de maîtrise : Acquis, cran 2 sur 3">
+                  <div class="scale-track" aria-hidden="true">
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg"></span>
+                  </div>
+                  <div class="scale-ticks" aria-hidden="true">
+                    <span>Découverte</span><span class="on">Acquis</span><span>Autonome</span>
+                  </div>
+                </div>
+
+                <div class="level-learnings">
+                  <h5><i class="fas fa-graduation-cap"></i> Ce que ce niveau implique :</h5>
+                  <ul>
+                    <li>Valider une structure en simulation avant de la réaliser</li>
+                    <li>Confronter les valeurs obtenues aux exigences du cahier des charges</li>
+                    <li>Découper la vérification en phases plutôt que de tout éprouver à la fin</li>
+                  </ul>
+                </div>
+                <div class="level-justification">
+                  <div class="justif-mastered">
+                    <h5><i class="fas fa-check"></i> Ce que je maîtrise :</h5>
+                    <p>Sur le variateur de vitesse (SAÉ 3.01) : après avoir dimensionné l'inductance de lissage
+                      (600 µH) et le condensateur de filtrage puis validé la structure en simulation PSIM, j'ai
+                      construit le prototype et déroulé les phases de vérification des fonctionnalités puis des
+                      contraintes, avant ajustement et validation.</p>
+                  </div>
+                  <div class="justif-improve">
+                    <h5><i class="fas fa-arrow-up"></i> À améliorer :</h5>
+                    <p>Consigner les résultats : le compte-rendu de cette SAÉ documente le dimensionnement et la
+                      simulation, pas les relevés de la phase de vérification. Une fiche de tests écrite avant de
+                      commencer, et remplie au fur et à mesure, manque encore à ma pratique.</p>
+                  </div>
+                </div>
+
+                <details class="level-more" open>
+                  <summary>
+                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-more-toggle" aria-hidden="true"></span>
+                  </summary>
+                <div class="level-projects">
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Compte-rendu — Variateur de vitesse (SAÉ 3.01)</span>
+                    <a class="btn-savoir-plus" href="assets/docs/rapport-variateur-sae3.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le rapport
+                    </a>
+                  </div>
+                </div>
+                </details>
+              </div>
+              <div class="level-item level-detailed" id="verifier-n3" data-niveau="3">
+                <div class="level-header">
+                  <span class="level-badge">Niveau 3</span>
+                  <div class="level-eval">
+                    <span class="eval-label">Acquis</span>
+                  </div>
+                </div>
+                <p class="level-title">Élaborer une procédure intégrant une démarche qualité pour valider le
+                  fonctionnement</p>
+                <div class="level-scale" data-cran="2" role="img"
+                     aria-label="Niveau de maîtrise : Acquis, cran 2 sur 3">
+                  <div class="scale-track" aria-hidden="true">
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg"></span>
+                  </div>
+                  <div class="scale-ticks" aria-hidden="true">
+                    <span>Découverte</span><span class="on">Acquis</span><span>Autonome</span>
+                  </div>
+                </div>
+
+                <div class="level-learnings">
+                  <h5><i class="fas fa-graduation-cap"></i> Ce que ce niveau implique :</h5>
+                  <ul>
+                    <li>Établir un protocole de tests structuré (E/S, communication, sécurité)</li>
+                    <li>Diagnostiquer les pannes mécaniques et électriques</li>
+                    <li>Valider la conformité du système avant mise en production</li>
+                  </ul>
+                </div>
+                <div class="level-justification">
+                  <div class="justif-mastered">
+                    <h5><i class="fas fa-check"></i> Ce que je maîtrise :</h5>
+                    <p>Audit armoire électrique (câblage non conforme → refonte complète), diagnostic pannes mécaniques
+                      complexes (poulie désolidarisée axe Y), tests communication CANopen (Heartbeat, Node ID),
+                      validation modes manuels (Jog X/Y), sécurisation circuits 24V/230V. En SAÉ 6.01, diagnostic
+                      dynamique d'un comportement aléatoire en mode automatique par analyse des variables en ligne
+                      (désynchronisation liée au temps de cycle, référentiel non validé), corrigé et validé par des
+                      essais répétés jusqu'à 100 % de répétabilité — la démarche de diagnostic dynamique est
+                      désormais acquise.</p>
+                  </div>
+                  <div class="justif-improve">
+                    <h5><i class="fas fa-arrow-up"></i> À améliorer :</h5>
+                    <p>Formalisation procédures de recette industrielles, documentation tests selon normes (IEC),
+                      protocoles de validation automatisés.</p>
+                  </div>
+                </div>
+
+                <details class="level-more" open>
+                  <summary>
+                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-more-toggle" aria-hidden="true"></span>
+                  </summary>
+                <div class="level-projects">
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-robot"></i> Robot Cartésien 2 Axes (SAÉ 5.01 et 6.01)</span>
+                    <button class="btn-savoir-plus" onclick="openProjectModal('robot-cartesien')">
+                      <i class="fas fa-arrow-right"></i> En savoir plus
+                    </button>
+                  </div>
+                </div>
+                </details>
+              </div>
+            </div>
+          </div>
+
+          <!-- MAINTENIR -->
+          <div class="competence-card maintenir">
+            <div class="competence-header">
+              <i class="fas fa-tools"></i>
+              <h3>Maintenir</h3>
+            </div>
+            <div class="competence-levels">
+              <div class="level-item level-detailed" id="maintenir-n2" data-niveau="2">
+                <div class="level-header">
+                  <span class="level-badge">Niveau 2</span>
+                  <div class="level-eval">
+                    <span class="eval-label">Autonome</span>
+                  </div>
+                </div>
+                <p class="level-title">Intervenir sur un système pour effectuer une opération de maintenance</p>
+                <div class="level-scale" data-cran="3" role="img"
+                     aria-label="Niveau de maîtrise : Autonome, cran 3 sur 3">
+                  <div class="scale-track" aria-hidden="true">
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                  </div>
+                  <div class="scale-ticks" aria-hidden="true">
+                    <span>Découverte</span><span>Acquis</span><span class="on">Autonome</span>
+                  </div>
+                </div>
+
+                <div class="level-learnings">
+                  <h5><i class="fas fa-graduation-cap"></i> Ce que ce niveau implique :</h5>
+                  <ul>
+                    <li>Remonter d'un symptôme à sa cause par élimination</li>
+                    <li>Distinguer un défaut de câblage, un défaut de paramétrage et un organe hors service</li>
+                    <li>Consigner ce qui doit être remplacé pour que le client puisse le planifier</li>
+                  </ul>
+                </div>
+                <div class="level-justification">
+                  <div class="justif-mastered">
+                    <h5><i class="fas fa-check"></i> Ce que je maîtrise :</h5>
+                    <p>Sur les installations en exploitation, je suis une procédure de diagnostic ordonnée. Un point
+                      qui ne remonte pas m'envoie d'abord au câblage — sonde, vanne trois voies. S'il remonte mais que
+                      la valeur est incohérente, je cherche une erreur de paramétrage : une sonde déclarée en NTC10K
+                      alors qu'il s'agit d'une PT100 affiche une température plausible et pourtant fausse. Si
+                      l'anomalie persiste, je tranche par élimination entre un module défectueux et une entrée ou une
+                      sortie d'automate endommagée ; dans ce second cas, je recâble sur une voie disponible, je
+                      reporte la modification sur le schéma électrique, puis j'adapte le programme. Quand l'automate
+                      n'a plus de voie libre, ou qu'un organe est hors service, je le consigne au rapport
+                      d'intervention pour que le client planifie son remplacement. En visite préventive, je vérifie
+                      que chaque alarme se déclenche dans les bonnes conditions et retombe une fois le défaut levé.</p>
+                  </div>
+                  <div class="justif-improve">
+                    <h5><i class="fas fa-arrow-up"></i> À améliorer :</h5>
+                    <p>Suivre un parc dans la durée. Mes rapports décrivent bien une intervention, mais rien ne
+                      relie une visite à la suivante : repérer qu'une même sonde est tombée deux fois dans l'année
+                      demande une historisation que je n'ai pas encore mise en place.</p>
+                  </div>
+                </div>
+
+                <details class="level-more" open>
+                  <summary>
+                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-more-toggle" aria-hidden="true"></span>
+                  </summary>
+                <div class="level-projects">
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Compte-rendu — Procédure de diagnostic (GTB)</span>
+                    <a class="btn-savoir-plus" href="assets/docs/procedure-diagnostic-gtb.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le rapport
+                    </a>
+                  </div>
+                </div>
+                </details>
+              </div>
+
+              <div class="level-item level-detailed" id="maintenir-n3" data-niveau="3">
+                <div class="level-header">
+                  <span class="level-badge">Niveau 3</span>
+                  <div class="level-eval">
+                    <span class="eval-label">Autonome</span>
+                  </div>
+                </div>
+                <p class="level-title">Mettre en place une stratégie de maintenance pour garantir un fonctionnement optimal</p>
+                <div class="level-scale" data-cran="3" role="img"
+                     aria-label="Niveau de maîtrise : Autonome, cran 3 sur 3">
+                  <div class="scale-track" aria-hidden="true">
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                  </div>
+                  <div class="scale-ticks" aria-hidden="true">
+                    <span>Découverte</span><span>Acquis</span><span class="on">Autonome</span>
+                  </div>
+                </div>
+
+                <div class="level-learnings">
+                  <h5><i class="fas fa-graduation-cap"></i> Ce que ce niveau implique :</h5>
+                  <ul>
+                    <li>Définir une règle d'alternance des organes redondants pour répartir l'usure</li>
+                    <li>Assurer la continuité de service par bascule automatique sur défaut</li>
+                    <li>Intégrer les sécurités process et laisser une reprise en main à l'exploitant</li>
+                  </ul>
+                </div>
+                <div class="level-justification">
+                  <div class="justif-mastered">
+                    <h5><i class="fas fa-check"></i> Ce que je maîtrise :</h5>
+                    <p>Programmation de la permutation des organes redondants — pompes doubles et chaudières,
+                      sur le même principe — en blocs fonctions sous L-Studio (Loytec), sur des installations en
+                      exploitation. Le compte-rendu joint détaille l'implantation sur les pompes. La bascule est
+                      calendaire : l'horloge de l'automate est découpée par <code>SPLIT_DT</code> et le jour du mois
+                      décide quel organe est autorisé, soit une permutation à la quinzaine. L'usure se répartit entre
+                      les deux organes, et aucun ne reste assez longtemps à l'arrêt pour se gripper. Le défaut d'un
+                      organe autorise l'autre hors cycle, dans les deux sens, ce qui maintient le service sans
+                      intervention. S'y ajoutent la sécurité manque d'eau câblée en série sur la commande, un
+                      sélecteur automatique / manuel et un forçage laissé à l'exploitant, placé en parallèle de la
+                      chaîne automatique mais toujours soumis à la sécurité manque d'eau.</p>
+                  </div>
+                  <div class="justif-improve">
+                    <h5><i class="fas fa-arrow-up"></i> À améliorer :</h5>
+                    <p>La permutation suit le calendrier, pas les heures réelles, et l'écart joue toujours dans le
+                      même sens : sur une année, un organe est autorisé 197 jours contre 168 à l'autre, soit 8 % de
+                      déséquilibre. Le compteur d'heures existe en supervision mais ne déclenche rien. Et l'état
+                      remonté est la commande calculée, pas un retour de marche : une pompe commandée mais réellement
+                      à l'arrêt ne se distingue pas à ce niveau du programme.</p>
+                  </div>
+                </div>
+
+                <details class="level-more" open>
+                  <summary>
+                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-more-toggle" aria-hidden="true"></span>
+                  </summary>
+                <div class="level-proof-shots">
+                  <figure class="shot-narrow">
+                    <a href="assets/img/permutation-pompes-fb.png" target="_blank" rel="noopener">
+                      <img src="assets/img/permutation-pompes-fb.png"
+                           alt="Bloc fonction « Gestion Permutation Pompes » : l'horloge passe par SPLIT_DT, et le jour du mois comparé à 15 produit les deux autorisations AutorP1 et AutorP2.">
+                    </a>
+                    <figcaption>Permutation à la quinzaine — L-Studio</figcaption>
+                  </figure>
+                  <figure>
+                    <a href="assets/img/gestion-pompes-fb.png" target="_blank" rel="noopener">
+                      <img src="assets/img/gestion-pompes-fb.png"
+                           alt="Blocs « Gestion Pompe 1 » et « Gestion Pompe 2 » : chaque pompe est commandée par sa propre autorisation ou par le défaut de l'autre, avec sécurité manque d'eau, forçage manuel et retour d'état.">
+                    </a>
+                    <figcaption>Commande des deux pompes et bascule sur défaut</figcaption>
+                  </figure>
+                </div>
+                <div class="level-projects">
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Compte-rendu — Permutation des pompes redondantes</span>
+                    <a class="btn-savoir-plus" href="assets/docs/permutation-pompes-chaudieres.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le rapport
+                    </a>
+                  </div>
+                </div>
+                </details>
+              </div>
+            </div>
+          </div>
+
+          <!-- INTEGRER -->
+          <div class="competence-card integrer">
+            <div class="competence-header">
+              <i class="fas fa-plug"></i>
+              <h3>Intégrer</h3>
+            </div>
+            <div class="competence-levels">
+              <div class="level-item level-detailed" id="integrer-n2" data-niveau="2">
+                <div class="level-header">
+                  <span class="level-badge">Niveau 2</span>
+                  <div class="level-eval">
+                    <span class="eval-label">Autonome</span>
+                  </div>
+                </div>
+                <p class="level-title">Procéder à une installation ou à une mise en service en suivant un protocole</p>
+                <div class="level-scale" data-cran="3" role="img"
+                     aria-label="Niveau de maîtrise : Autonome, cran 3 sur 3">
+                  <div class="scale-track" aria-hidden="true">
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                  </div>
+                  <div class="scale-ticks" aria-hidden="true">
+                    <span>Découverte</span><span>Acquis</span><span class="on">Autonome</span>
+                  </div>
+                </div>
+
+                <div class="level-learnings">
+                  <h5><i class="fas fa-graduation-cap"></i> Ce que ce niveau implique :</h5>
+                  <ul>
+                    <li>Relever les contraintes physiques du site avant d'agir sur l'installation</li>
+                    <li>Ordonner les manœuvres pour qu'aucun état transitoire ne soit dangereux</li>
+                    <li>Programmer sur site et caler le fonctionnement sur l'occupation du bâtiment</li>
+                  </ul>
+                </div>
+                <div class="level-justification">
+                  <div class="justif-mastered">
+                    <h5><i class="fas fa-check"></i> Ce que je maîtrise :</h5>
+                    <p>Au centre commercial de l'Avenue 83, j'ai programmé sur automate Sauter, directement sur
+                      site, deux vannes deux voies isolant la zone nord — les magasins, fermés à 20 h — de la zone
+                      sud, où les restaurants restent ouverts jusqu'à 2 h. Le circuit qui renvoie l'eau vers le
+                      retour est plus étroit que le réseau principal et les pompes en amont sont puissantes :
+                      refermer une vanne sans précaution exposait l'installation à une surpression. J'ai donc
+                      séquencé la manœuvre — les deux vannes s'ouvrent d'abord, une temporisation de 120 secondes et
+                      un contrôle de discordance confirment qu'elles le sont bien, puis l'une se referme, la vitesse
+                      des pompes étant réduite pendant l'opération. Le cycle suit ensuite l'occupation du bâtiment :
+                      la liaison s'ouvre à 9 h, la configuration s'inverse à 20 h, l'installation s'éteint à 2 h.</p>
+                  </div>
+                  <div class="justif-improve">
+                    <h5><i class="fas fa-arrow-up"></i> À améliorer :</h5>
+                    <p>Mesurer ce que j'annonce. L'installation est créditée d'environ 10 % d'économie, mais avec
+                      un mois d'exploitation au moment du bilan. Le relevé sur une saison complète, qui seul
+                      confirmerait ce chiffre, reste à mettre en place.</p>
+                  </div>
+                </div>
+
+                <details class="level-more" open>
+                  <summary>
+                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-more-toggle" aria-hidden="true"></span>
+                  </summary>
+                <div class="level-projects">
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Compte-rendu — Mise en service Avenue 83</span>
+                    <a class="btn-savoir-plus" href="assets/docs/mise-en-service-avenue83.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le rapport
+                    </a>
+                  </div>
+                </div>
+                </details>
+              </div>
+              <div class="level-item level-detailed" id="integrer-n3" data-niveau="3">
+                <div class="level-header">
+                  <span class="level-badge">Niveau 3</span>
+                  <div class="level-eval">
+                    <span class="eval-label">Acquis</span>
+                  </div>
+                </div>
+                <p class="level-title">Interagir avec les différents acteurs, depuis l'élaboration du protocole
+                  jusqu'à l'installation</p>
+                <div class="level-scale" data-cran="2" role="img"
+                     aria-label="Niveau de maîtrise : Acquis, cran 2 sur 3">
+                  <div class="scale-track" aria-hidden="true">
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg on"></span>
+                    <span class="scale-seg"></span>
+                  </div>
+                  <div class="scale-ticks" aria-hidden="true">
+                    <span>Découverte</span><span class="on">Acquis</span><span>Autonome</span>
+                  </div>
+                </div>
+
+                <div class="level-learnings">
+                  <h5><i class="fas fa-graduation-cap"></i> Ce que ce niveau implique :</h5>
+                  <ul>
+                    <li>Coordonner avec les différents acteurs d'un projet, de l'étude à l'installation</li>
+                    <li>Adapter la solution technique aux contraintes réelles du site</li>
+                    <li>Livrer une interface qu'un opérateur prend en main sans le concepteur</li>
+                  </ul>
+                </div>
+                <div class="level-justification">
+                  <div class="justif-mastered">
+                    <h5><i class="fas fa-check"></i> Ce que je maîtrise :</h5>
+                    <p>Étude d'implantation et prise en compte des contraintes dimensionnelles, rationalisation du
+                      câblage, choix de l'équipement de façade, conception d'une supervision tactile (partie IV du
+                      compte-rendu SAÉ 6.01).</p>
+                  </div>
+                  <div class="justif-improve">
+                    <h5><i class="fas fa-arrow-up"></i> À améliorer :</h5>
+                    <p>Formalisation d'un dossier de recette d'installation, retour d'expérience structuré après mise
+                      en service.</p>
+                  </div>
+                </div>
+
+                <details class="level-more" open>
+                  <summary>
+                    <span class="level-proof-count">1 preuve</span>
+                    <span class="level-more-toggle" aria-hidden="true"></span>
+                  </summary>
+                <div class="level-projects">
+                  <div class="project-preview">
+                    <span class="project-title"><i class="fas fa-file-pdf"></i> Compte-rendu SAÉ 6.01 (partie IV)</span>
+                    <a class="btn-savoir-plus" href="assets/docs/rapport-robot-sae6.pdf" target="_blank" rel="noopener">
+                      <i class="fas fa-arrow-right"></i> Voir le compte-rendu
+                    </a>
+                  </div>
+                </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        // Les cases du référentiel sont écrites dépliées dans le HTML pour rester
+        // lisibles sans JavaScript et à l'impression. Dès que ce script tourne, on
+        // les referme : repliées, elles ont toutes la même hauteur, et les niveaux
+        // s'alignent d'une compétence à l'autre.
+        (function () {
+          var section = document.getElementById('competences');
+          if (!section) return;
+          var cases = Array.prototype.slice.call(section.querySelectorAll('.level-more'));
+          cases.forEach(function (c) { c.open = false; });
+
+          var bouton = document.getElementById('deplier-tout');
+          if (bouton) {
+            bouton.hidden = false;
+            bouton.addEventListener('click', function () {
+              var ouvrir = cases.some(function (c) { return !c.open; });
+              cases.forEach(function (c) { c.open = ouvrir; });
+              bouton.textContent = ouvrir ? 'Tout replier' : 'Tout déplier';
+              bouton.setAttribute('aria-expanded', String(ouvrir));
+            });
+          }
+
+          // Une preuve cachée ne prouve rien sur papier : on rouvre tout avant
+          // l'impression, et on rend son état à la page ensuite.
+          var etat = [];
+          window.addEventListener('beforeprint', function () {
+            etat = cases.map(function (c) { return c.open; });
+            cases.forEach(function (c) { c.open = true; });
+          });
+          window.addEventListener('afterprint', function () {
+            cases.forEach(function (c, i) { c.open = etat[i]; });
+          });
+        })();
+      </script>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience">
+        <h2 class="section-title">Expérience</h2>
+        <p class="section-subtitle">3 ans d'alternance en Gestion Technique du Bâtiment (GTC/GTB).</p>
+
+        <div class="experience-grid">
+          <!-- Main alternance card - Solutions Regul Concept -->
+          <div class="experience-card fade-in">
+            <div class="experience-date">
+              <span class="year">2024 — 2026</span>
+              <span class="period">Alternance</span>
+            </div>
+            <div class="experience-content">
+              <h3>Technicien GTC/GTB</h3>
+              <p class="company"><i class="fas fa-building"></i> Solutions Regul Concept — Nice (06)</p>
+              <p>Développement, programmation et mise en service de systèmes de Gestion Technique Centralisée pour le
+                pilotage des équipements techniques de bâtiments (CVC, éclairage, sécurité).</p>
+              <p>Ce poste fait suite à mon alternance chez Eurevia : l'équipe avec laquelle je travaillais a quitté
+                l'entreprise pour fonder Solutions Regul Concept, et m'a proposé de la suivre.</p>
+              <ul>
+                <li>Création d'imageries (interfaces graphiques de supervision) avec la suite Loytec</li>
+                <li>Programmation et configuration de contrôleurs via protocoles BACnet et Modbus</li>
+                <li>Mise en service sur site : tests E/S, calibration sondes, vérification alarmes</li>
+                <li>Interventions à distance via VPN (OpenVPN, FortiClient) sur projets multi-sites</li>
+                <li>Optimisation énergétique et réduction des consommations</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Loytec</span>
+                <span class="tag">Sauter</span>
+                <span class="tag">BACnet</span>
+                <span class="tag">Modbus</span>
+                <span class="tag">GTC/GTB</span>
+              </div>
+              <a href="#projets" class="btn-voir-projets" onclick="filterEntrepriseProjects(event)">
+                <i class="fas fa-briefcase"></i> Voir projets entreprise
+              </a>
+            </div>
+          </div>
+
+          <!-- Eurevia alternance card -->
+          <div class="experience-card fade-in">
+            <div class="experience-date">
+              <span class="year">2023 — 2024</span>
+              <span class="period">Alternance</span>
+            </div>
+            <div class="experience-content">
+              <h3>Technicien GTC/GTB</h3>
+              <p class="company"><i class="fas fa-building"></i> Eurevia — La Ciotat (13)</p>
+              <p>Développement d'imageries et mise en service de systèmes de supervision dans un environnement GTB/GTC.
+              </p>
+              <ul>
+                <li>Création et mise en forme d'interfaces de supervision sur écosystème Loytec</li>
+                <li>Intégration des points (états, commandes, consignes) et structuration des pages</li>
+                <li>Mise en service et dépannage : tests pompes, vannes, ventilateurs, CTA</li>
+                <li>Vérification cohérence des valeurs, identification erreurs de paramétrage</li>
+                <li>Diagnostic terrain et à distance (E/S, capteurs, communication)</li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Loytec</span>
+                <span class="tag">Supervision</span>
+                <span class="tag">Dépannage</span>
+                <span class="tag">GTB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Freelance vidéo -->
+          <div class="experience-card fade-in">
+            <div class="experience-date">
+              <span class="year">Janvier 2024 — Aujourd'hui</span>
+              <span class="period">Freelance</span>
+            </div>
+            <div class="experience-content">
+              <h3>Monteur et cadreur</h3>
+              <p class="company"><i class="fas fa-video"></i> Freelance</p>
+              <p>Réalisation de vidéos pour Mathew Strazel : prise de vue et montage, en autonomie complète face au
+                client, du brief à la livraison. C'est ce travail en solo qui justifie DaVinci Resolve parmi mes
+                outils.</p>
+              <div class="tags">
+                <span class="tag">DaVinci Resolve</span>
+                <span class="tag">Montage</span>
+                <span class="tag">Freelance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRAVAIL D'ÉQUIPE -->
+      <section id="equipe">
+        <h2 class="section-title">Travail d'équipe</h2>
+        <p class="section-subtitle">Ce que je sais faire quand je ne suis pas seul devant la machine.</p>
+
+        <div class="equipe-grid">
+          <div class="equipe-card">
+            <h3>SAÉ 5.01 et 6.01 — Robot cartésien</h3>
+            <p class="equipe-role">Répartition des tâches et suivi d'avancement</p>
+            <p>Projet mené en binôme sur deux semestres, sur un système hors service : diagnostic
+               mécanique, refonte de l'armoire électrique, programmation et supervision, puis
+               automatisation complète. Nous avons piloté la répartition des tâches en Kanban
+               sous Notion, ce qui a permis de travailler en parallèle sur la partie électrique
+               et la partie logicielle sans se bloquer.</p>
+            <div class="tags">
+              <span class="tag">Kanban</span>
+              <span class="tag">Notion</span>
+              <span class="tag">Projet de groupe</span>
+            </div>
+            <a class="btn-savoir-plus" href="assets/docs/rapport-robot-sae6.pdf" target="_blank" rel="noopener">
+              <i class="fas fa-arrow-right"></i> Voir le compte-rendu SAÉ 6.01
+            </a>
+          </div>
+
+          <div class="equipe-card">
+            <h3>Interventions sur site en alternance</h3>
+            <p class="equipe-role">Coordination avec les corps de métier</p>
+            <p>Les mises en service en GTB se font au milieu d'autres intervenants :
+               chauffagistes, électriciens, exploitants du bâtiment. Vérifier une sonde ou
+               une vanne suppose de se caler sur leur planning et de leur expliquer ce que
+               je teste et pourquoi.</p>
+            <div class="tags">
+              <span class="tag">Coordination</span>
+              <span class="tag">Terrain</span>
+            </div>
+          </div>
+
+          <div class="equipe-card">
+            <h3>Handball</h3>
+            <p class="equipe-role">10 ans en club — HOSH Hyères</p>
+            <p>Dix ans de handball en club, en parallèle de l'option Éducation Physique et Sportive au
+              baccalauréat. Ce que ça apprend : tenir sa place dans un collectif sur la durée, et ajuster son
+              rôle selon celui des autres pendant l'action, pas après coup.</p>
+            <div class="tags">
+              <span class="tag">Sport collectif</span>
+              <span class="tag">10 ans</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMATION SECTION - Timeline with Sticky Photos -->
+      <section id="formation">
+        <h2 class="section-title">Mon Parcours</h2>
+        <p class="section-subtitle">Mon parcours académique en génie électrique et informatique industrielle.</p>
+
+        <div class="formation-timeline-grid">
+          <div class="formation-col formation-col-left">
+            <div class="formation-timeline-items">
+              <div class="formation-timeline-item" data-index="0">
+                <div class="formation-item-content">
+                  <span class="formation-year">2023</span>
+                  <h3>Baccalauréat Général</h3>
+                  <p class="formation-school"><i class="fas fa-school"></i> Lycée Général Jean Aicard</p>
+                  <p>Spécialités : Mathématiques, Sciences Économiques et Sociales. Option : Éducation Physique et
+                    Sportive.</p>
+                  <div class="formation-highlights">
+                    <span class="highlight-tag">Mention Assez Bien</span>
+                    <span class="highlight-tag">Sport</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="formation-timeline-item" data-index="1">
+                <div class="formation-item-content">
+                  <span class="formation-year">2023 — 2024</span>
+                  <h3>BUT GEII — Année 1</h3>
+                  <p class="formation-school"><i class="fas fa-graduation-cap"></i> IUT de La Garde</p>
+                  <p>Découverte des fondamentaux : électronique analogique et numérique, programmation C, automatismes
+                    de base. Alternance chez Eurevia.</p>
+                  <div class="formation-highlights">
+                    <span class="highlight-tag">Alternance</span>
+                    <span class="highlight-tag">Eurevia</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="formation-timeline-item" data-index="2">
+                <div class="formation-item-content">
+                  <span class="formation-year">2024 — 2025</span>
+                  <h3>BUT GEII — Année 2 (Parcours AII)</h3>
+                  <p class="formation-school"><i class="fas fa-graduation-cap"></i> IUT de La Garde</p>
+                  <p>Approfondissement : automates programmables, réseaux industriels, régulation. Alternance
+                    chez Solutions Regul Concept.</p>
+                  <div class="formation-highlights">
+                    <span class="highlight-tag">Alternance</span>
+                    <span class="highlight-tag">Solutions Regul Concept</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="formation-timeline-item" data-index="3">
+                <div class="formation-item-content">
+                  <span class="formation-year">2025 — 2026</span>
+                  <h3>BUT GEII — Année 3 (Parcours AII)</h3>
+                  <p class="formation-school"><i class="fas fa-graduation-cap"></i> IUT de La Garde</p>
+                  <p>Spécialisation Automatisme et Informatique Industrielle. Projets avancés GTC/GTB. Alternance chez
+                    Solutions Regul Concept.</p>
+                  <div class="formation-highlights">
+                    <span class="highlight-tag">Alternance</span>
+                    <span class="highlight-tag">Solutions Regul Concept</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="formation-col formation-col-center">
+            <div class="formation-line-rail">
+              <div class="formation-line-track"></div>
+              <div class="formation-line-progress" id="formation-progress"></div>
+              <div class="formation-dots">
+                <div class="formation-dot active" data-index="0"></div>
+                <div class="formation-dot" data-index="1"></div>
+                <div class="formation-dot" data-index="2"></div>
+                <div class="formation-dot" data-index="3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="formation-col formation-col-right">
+            <figure class="formation-figure">
+              <div class="formation-image-stack">
+                <img src="assets/img/tp-bouchonnage-but1.png" class="formation-img" data-index="1"
+                  data-caption="BUT 1 — TP d'automatisme : chaîne de bouchonnage pilotée par automate WAGO"
+                  alt="Automate WAGO et chaîne de bouchonnage du TP d'automatisme de première année">
+                <img src="assets/img/CTA00.png" class="formation-img" data-index="2"
+                  data-caption="BUT 2 — en alternance : imagerie de supervision d'une centrale de traitement d'air"
+                  alt="Imagerie de supervision d'une centrale de traitement d'air, réalisée en alternance">
+                <img src="assets/img/robot-cartesien-photo.jpg" class="formation-img" data-index="3"
+                  data-caption="BUT 3 — SAÉ 5.01 et 6.01 : robot cartésien remis en service, avec son IHM tactile"
+                  alt="Robot cartésien deux axes remis en service, avec son IHM tactile">
+              </div>
+              <figcaption class="formation-figure-caption" id="formation-caption">
+                BUT 1 — TP d'automatisme : chaîne de bouchonnage pilotée par automate WAGO
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- SE PROJETER -->
+      <section id="projeter">
+        <h2 class="section-title">Se projeter</h2>
+        <p class="section-subtitle">Ce que je compte faire des compétences acquises.</p>
+
+        <div class="projeter-grid">
+          <div class="projeter-card">
+            <h3><i class="fas fa-bullseye"></i> Mon objectif</h3>
+            <p>Cycle ingénieur en apprentissage à l'ISEN Toulon, de 2026 à 2029, en alternance chez Naval Group
+              comme Responsable de Lot de Travaux Système de Combat (SYSCO).</p>
+          </div>
+          <div class="projeter-card">
+            <h3><i class="fas fa-toolbox"></i> Ce que j'y apporte</h3>
+            <p>Trois ans de terrain en automatisme et gestion technique du bâtiment : mise en service,
+              diagnostic de panne, intégration sur des protocoles BACnet et Modbus, interfaces de supervision.
+              J'arrive en sachant ce que devient un système une fois sorti du plan.</p>
+          </div>
+          <div class="projeter-card">
+            <h3><i class="fas fa-seedling"></i> Ce que je veux continuer d'apprendre</h3>
+            <p>Trois ans sur le terrain m'ont donné envie de voir plus large : acquérir une vision d'équipe,
+              apprendre à encadrer et gérer des équipes, et toute la partie gestion de projet. C'est la raison
+              de ce passage en cycle ingénieur.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- SKILLS / LANGUAGES SECTION -->
+    <section class="skills-section">
+      <div class="container">
+        <h2 class="section-title">Langages & Logiciels</h2>
+        <p class="section-subtitle">Les outils et technologies que je maîtrise pour mes projets.</p>
+      </div>
+      <div class="skills-grid full-bleed">
+
+
+
+        <div class="skill-card">
+          <div class="skill-placeholder">
+            <img src="assets/img/cpp-logo.png" alt="Logo ISO C++">
+          </div>
+          <div class="skill-overlay">
+            <div class="skill-left">
+              <div class="skill-title">C++</div>
+              <div class="skill-desc">Algorithmes embarqués et programmation temps réel sur microcontrôleurs.</div>
+            </div>
+            <div class="skill-toggle" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-placeholder"><i class="fas fa-bars" style="color:#3DCD58"></i></div>
+          <div class="skill-overlay">
+            <div class="skill-left">
+              <div class="skill-title">Ladder</div>
+              <div class="skill-desc">Programmation d'automates en schéma à contacts, sur Schneider M340.</div>
+            </div>
+            <div class="skill-toggle" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-placeholder">
+            <img src="assets/img/arduino-logo.png" alt="Logo Arduino">
+          </div>
+          <div class="skill-overlay">
+            <div class="skill-left">
+              <div class="skill-title">Arduino</div>
+              <div class="skill-desc">Prototypage électronique et contrôle de capteurs/actionneurs.</div>
+            </div>
+            <div class="skill-toggle" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-placeholder">
+            <img src="assets/img/python-logo.png" alt="Logo Python">
+          </div>
+          <div class="skill-overlay">
+            <div class="skill-left">
+              <div class="skill-title">Python</div>
+              <div class="skill-desc">Scripts d'automatisation, analyse de données et prototypes rapides.</div>
+            </div>
+            <div class="skill-toggle" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-placeholder">
+            <img src="assets/img/ni-labview-logo.png" alt="Logo National Instruments, éditeur de LabVIEW">
+          </div>
+          <div class="skill-overlay">
+            <div class="skill-left">
+              <div class="skill-title">LabVIEW</div>
+              <div class="skill-desc">Interfaces de mesure et supervision pour bancs d'essais.</div>
+            </div>
+            <div class="skill-toggle" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-placeholder">
+            <img src="assets/img/kicad-logo.png" alt="Logo KiCad">
+          </div>
+          <div class="skill-overlay">
+            <div class="skill-left">
+              <div class="skill-title">KiCad</div>
+              <div class="skill-desc">Conception de circuits imprimés et routage pour prototypes.</div>
+            </div>
+            <div class="skill-toggle" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-placeholder">
+            <img src="assets/img/davinci-logo.png" alt="Logo DaVinci Resolve">
+          </div>
+          <div class="skill-overlay">
+            <div class="skill-left">
+              <div class="skill-title">DaVinci Resolve</div>
+              <div class="skill-desc">Montage vidéo et étalonnage pour contenus projets et présentation.</div>
+            </div>
+            <div class="skill-toggle" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-placeholder">
+            <img src="assets/img/loytec-logo.png" class="logo-on-dark" alt="Logo Loytec">
+          </div>
+          <div class="skill-overlay">
+            <div class="skill-left">
+              <div class="skill-title">Loytec L-Studio</div>
+              <div class="skill-desc">Programmation automates Loytec pour GTC/GTB, configuration réseaux BACnet/Modbus.
+              </div>
+            </div>
+            <div class="skill-toggle" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-placeholder">
+            <img src="assets/img/loytec-logo.png" class="logo-on-dark" alt="Logo Loytec">
+          </div>
+          <div class="skill-overlay">
+            <div class="skill-left">
+              <div class="skill-title">Loytec L-Vis</div>
+              <div class="skill-desc">Création d'interfaces de supervision pour systèmes GTC, visualisation temps réel.
+              </div>
+            </div>
+            <div class="skill-toggle" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-placeholder">
+            <img src="assets/img/sauter-logo.png" alt="Logo Sauter">
+          </div>
+          <div class="skill-overlay">
+            <div class="skill-left">
+              <div class="skill-title">Sauter</div>
+              <div class="skill-desc">Configuration automates Sauter, programmation CVC et gestion énergétique
+                bâtiments.</div>
+            </div>
+            <div class="skill-toggle" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact-section">
+        <h2 class="section-title">Me Contacter</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">N'hésitez pas à me contacter pour discuter d'opportunités ou
+          de collaborations.</p>
+
+        <div class="contact-grid">
+          <a href="mailto:luccilucas21@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <p>luccilucas21@gmail.com</p>
+          </a>
+        </div>
+
+        <div class="contact-cta">
+          <a href="mailto:luccilucas21@gmail.com" class="btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            Envoyer un message
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <!-- PROJECT MODAL -->
+  <div class="project-modal" id="project-modal">
+    <div class="modal-overlay" onclick="closeProjectModal()"></div>
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeProjectModal()">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="modal-header">
+        <span class="modal-context" id="modal-context">Universitaire</span>
+        <h2 id="modal-title">Titre du Projet</h2>
+        <div class="modal-tags" id="modal-tags"></div>
+      </div>
+
+      <div class="modal-body">
+        <!-- Contexte -->
+        <div class="modal-section">
+          <h3><i class="fas fa-info-circle"></i> Contexte & Cahier des charges</h3>
+          <div id="modal-contexte"></div>
+        </div>
+
+        <!-- Interventions -->
+        <div class="modal-section">
+          <h3><i class="fas fa-tools"></i> Interventions réalisées</h3>
+          <div id="modal-interventions"></div>
+        </div>
+
+        <!-- Résultats -->
+        <div class="modal-section">
+          <h3><i class="fas fa-check-circle"></i> Résultats obtenus</h3>
+          <div id="modal-resultats"></div>
+        </div>
+
+        <!-- Ressenti -->
+        <div class="modal-section">
+          <h3><i class="fas fa-heart"></i> Ressenti personnel</h3>
+          <div id="modal-ressenti"></div>
+        </div>
+
+        <!-- PDF Download -->
+        <div class="modal-section modal-download" id="modal-download-section">
+          <div class="modal-download-buttons" id="modal-download-buttons"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="brand">
+          <div class="logo-icon">LU</div>
+          <span>Portfolio</span>
+        </div>
+        <p>Étudiant en BUT GEII passionné par l'électronique, l'automatisme et le développement.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#equipe">Équipe</a></li>
+          <li><a href="#formation">Formation</a></li>
+          <li><a href="#projeter">Se projeter</a></li>
+          <li><a href="#about">À propos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Contact</h4>
+        <div class="social-links">
+          <a href="mailto:luccilucas21@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Lucas Lucci — Portfolio. Tous droits réservés.</p>
+      <p>Fait avec <i class="fas fa-heart footer-heart"></i> et du code</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script>
+    // Force scroll to top on page load
+    if (history.scrollRestoration) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
+    // Si GSAP n'a pas chargé, on retire la classe `js` : le CSS rend alors
+    // tout le contenu visible plutôt que de le laisser à opacity:0.
+    if (typeof gsap === 'undefined') {
+      document.documentElement.classList.remove('js');
+    } else {
+      gsap.registerPlugin(ScrollTrigger);
+    }
+
+    // =====================
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinksContainer = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinksContainer.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinksContainer.classList.remove('active');
+      });
+    });
+
+    // Bascule de thème, mémorisée d'une visite à l'autre.
+    // localStorage peut lever (SecurityError sous Safari en file://, quota,
+    // navigation privée) : un throw non intercepté ici arrêterait le reste
+    // du script, y compris les ScrollTrigger de fade-in plus bas.
+    (function () {
+      const bouton = document.getElementById('theme-toggle');
+      if (!bouton) return;
+      try {
+        const memorise = localStorage.getItem('portfolio-theme');
+        if (memorise === 'light') document.body.classList.add('light-theme');
+      } catch (e) {
+        // Pas de mémorisation possible : on continue avec le thème par défaut.
+      }
+      bouton.addEventListener('click', () => {
+        const clair = document.body.classList.toggle('light-theme');
+        try {
+          localStorage.setItem('portfolio-theme', clair ? 'light' : 'dark');
+        } catch (e) {
+          // Le thème change quand même pour cette visite, simplement non mémorisé.
+        }
+      });
+    })();
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Function to scroll to projects and filter by entreprise
+    function filterEntrepriseProjects(event) {
+      event.stopPropagation(); // Prevent triggering the expandable card
+
+      // Wait for scroll to complete then trigger filter
+      setTimeout(() => {
+        // Ne pas cliquer si le filtre est déjà posé : le bouton bascule, et
+        // un second clic depuis l'expérience le décocherait.
+        const entrepriseBtn = document.querySelector('.filter-btn[data-filter="entreprise"]');
+        if (entrepriseBtn && !entrepriseBtn.classList.contains('active')) {
+          entrepriseBtn.click();
+        }
+      }, 500);
+    }
+
+    // =====================
+    // PROJECT MODAL SYSTEM
+    // =====================
+
+    // Project data for modals
+    const projectsData = {
+      'variateur-vitesse': {
+        title: 'Variateur de Vitesse Connecté',
+        context: 'Universitaire',
+        tags: ['Arduino', 'C++', 'Électronique'],
+        pdfUrls: [
+          { label: 'Voir le compte-rendu PDF', url: './assets/docs/rapport-variateur-sae3.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> Projet universitaire SAÉ 3.01 – 3.02 en IUT GEII.</p>
+          <p><strong>Objectif :</strong> Concevoir et réaliser un variateur de vitesse pour un moteur à courant continu, permettant à un usager de moduler la vitesse à la demande.</p>
+          <p><strong>Méthodologie :</strong> Approche par analyse fonctionnelle (Bête à cornes, Diagramme Pieuvre) pour définir les contraintes (coût, source d'énergie, sécurité).</p>
+        `,
+        interventions: `
+          <ul>
+            <li><strong>Structure :</strong> Choix d'une structure de conversion statique type "Hacheur" réversible en courant (Pont en H)</li>
+            <li><strong>Calcul inductance de lissage :</strong> pour une fréquence de découpage de 30 kHz → Résultat : L = 600 µH</li>
+            <li><strong>Calcul condensateur de filtrage :</strong> Résultat théorique 2.31 µF → Choix final 2200 µF (sécurité)</li>
+            <li><strong>Simulation PSIM :</strong> Validation de la structure avant fabrication (courants max, stabilité tension)</li>
+            <li><strong>Choix MOSFET :</strong> STP55NF06 (60V blocage, 50A max) offrant grande marge de sécurité</li>
+            <li><strong>Driver :</strong> HIP4081A pour piloter le Pont en H (High Side / Low Side)</li>
+            <li><strong>Protection :</strong> Diodes Schottky MBR360 pour roue libre anti-surtension</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Réalisation physique de l'inductance et du prototype sur PCB/Vero</li>
+            <li>Système fonctionnel : variation de vitesse moteur de 0 à 24V via commande PWM</li>
+            <li>Validation par mesure : respect des contraintes de sécurité et dimensionnement</li>
+          </ul>
+        `,
+        ressenti: `
+          <p><strong>Ce que j'ai aimé :</strong> La partie dimensionnement théorique et la validation par simulation avant réalisation. C'est satisfaisant de voir les calculs confirmés par PSIM puis par le prototype réel.</p>
+          <p><strong>Difficultés rencontrées :</strong> Le choix des composants avec les bonnes marges de sécurité, et la réalisation physique de l'inductance de lissage.</p>
+          <p><strong>Lien projet pro :</strong> Ce projet m'a permis de comprendre en profondeur l'électronique de puissance, compétence essentielle pour mon parcours en automatisme et contrôle de moteurs industriels.</p>
+        `
+      },
+      'robot-cartesien': {
+        title: 'Robot Cartésien 2 Axes (X/Y)',
+        context: 'Universitaire',
+        tags: ['Schneider M340', 'CANopen', 'Motion Control', 'LADDER', 'IHM Magelis'],
+        pdfUrls: [
+          { label: 'Compte-rendu Phase 1 — SAÉ 5.01', url: './assets/docs/rapport-robot-sae5.pdf' },
+          { label: 'Compte-rendu Phase 2 — SAÉ 6.01', url: './assets/docs/rapport-robot-sae6.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> SAÉ 5.01 (BUT 3 GEII) – "Intégrer et piloter un système automatisé".</p>
+          <p><strong>Objectif :</strong> Rénovation complète, mise en service et programmation d'un Robot Cartésien 2 axes hors service.</p>
+          <p><strong>État initial :</strong> Système non fonctionnel, armoire électrique désorganisée ("en vrac"), câblage non conforme, documentation manquante.</p>
+          <p><strong>Outils de gestion :</strong> Notion (méthode Kanban) pour répartir les tâches et suivre l'avancement.</p>
+          <p><strong>Organisation :</strong> projet mené en binôme sur deux semestres, avec répartition des tâches entre la partie électrique et la partie logicielle.</p>
+          <p><strong>Architecture :</strong> Automate Schneider M340, Variateurs Lexium 32 (LXM32), Servomoteurs Brushless, IHM Magelis, Bus CANopen.</p>
+        `,
+        interventions: `
+          <ul>
+            <li><strong>Phase 1 – Diagnostic mécanique :</strong> Identification d'un défaut sur l'axe Y malgré paramétrage correct. Démontage, diagnostic : poulie motrice désolidarisée (vis desserrées). Recalage et validation du mouvement fluide.</li>
+            <li><strong>Phase 2 – Configuration variateurs :</strong> Paramétrage des LXM32 via SoMove (limites couple, vitesses max, identification moteur). Configuration CANopen (Node ID, Baudrate).</li>
+            <li><strong>Phase 3 – Programmation LADDER :</strong> Utilisation des bibliothèques T_MS_CO (Motion Control). Développement de DFB : Gestion_Power, Gestion_Reset, Gestion_Jog, Read_Param/Write_Param via SDO.</li>
+            <li><strong>Phase 4 – Industrialisation électrique :</strong> Refonte complète de l'armoire (goulottes, borniers DIN, repérage fils). Sécurisation 24V/230V. Schéma électrique sous QElectroTech.</li>
+            <li><strong>Phase 5 – Supervision IHM :</strong> Création interface Vijeo Designer : pilotage manuel, visualisation vitesse/courant, état communication (Heartbeat).</li>
+          </ul>
+        `,
+        resultats: `
+          <h4 class="phase-titre">Phase 1 — SAÉ 5.01 : remise en service (2025)</h4>
+          <ul>
+            <li>Robot fonctionnel en mode manuel (Jog) sur les deux axes X et Y</li>
+            <li>Armoire électrique sécurisée, propre et conforme aux normes</li>
+            <li>Communication stable : Automate ↔ Variateurs ↔ IHM via CANopen</li>
+            <li>Documentation complète : schémas électriques, paramétrage variateurs</li>
+          </ul>
+          <h4 class="phase-titre">Phase 2 — SAÉ 6.01 : automatisation complète (2026)</h4>
+          <ul>
+            <li><strong>Étalonnage spatial :</strong> procédure de prise d'origine (homing) fiabilisée, définissant un référentiel absolu</li>
+            <li><strong>Mode automatique :</strong> positionnement autonome par calcul d'écart (delta), après contournement du positionnement absolu</li>
+            <li><strong>Fiabilisation :</strong> correction des conflits de temps de cycle, gestion de l'inertie mécanique et du débordement de registre</li>
+            <li><strong>Intégration matérielle :</strong> étude d'implantation, rationalisation du câblage, équipement de façade</li>
+            <li><strong>Supervision tactile :</strong> IHM avec sécurités logicielles</li>
+            <li>Déplacements autonomes, précis et répétables — la cellule est passée de banc d'essai à cellule robotisée</li>
+          </ul>
+        `,
+        ressenti: `
+          <p><strong>Ce que j'ai aimé :</strong> La diversité des compétences mobilisées sur un seul projet : mécanique, électrique, programmation et supervision. Partir d'un système "en vrac" et le rendre fonctionnel est très gratifiant.</p>
+          <p><strong>Difficultés rencontrées :</strong> Le diagnostic de la panne mécanique (poulie axe Y) qui n'était pas évidente. La prise en main des bibliothèques Motion Control Schneider.</p>
+          <p><strong>Lien projet pro :</strong> Ce projet illustre parfaitement mon quotidien en alternance GTC/GTB : intégration multi-équipements, mise en service, et résolution de problèmes sur le terrain.</p>
+        `
+      }
+    };
+
+    // Open modal function
+    function openProjectModal(projectId) {
+      const project = projectsData[projectId];
+      if (!project) return;
+
+      // Populate modal
+      document.getElementById('modal-context').textContent = project.context;
+      document.getElementById('modal-title').textContent = project.title;
+
+      // Tags
+      const tagsContainer = document.getElementById('modal-tags');
+      tagsContainer.innerHTML = project.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+
+      // Content sections
+      document.getElementById('modal-contexte').innerHTML = project.contexte;
+      document.getElementById('modal-interventions').innerHTML = project.interventions;
+      document.getElementById('modal-resultats').innerHTML = project.resultats;
+      document.getElementById('modal-ressenti').innerHTML = project.ressenti;
+
+      // PDF download(s) — un projet peut avoir plusieurs preuves (ex. deux
+      // phases de SAÉ), chacune avec son propre libellé et son propre bouton.
+      // Construit via le DOM (pas d'innerHTML avec un attribut href tissé à la
+      // main) pour que le contrôle statique des références de tools/verifier.sh
+      // ne confonde pas ce gabarit avec un vrai lien codé en dur.
+      const downloadSection = document.getElementById('modal-download-section');
+      const downloadButtons = document.getElementById('modal-download-buttons');
+      const pdfs = project.pdfUrls || [];
+      downloadButtons.innerHTML = '';
+      if (pdfs.length) {
+        downloadSection.style.display = 'block';
+        pdfs.forEach(pdf => {
+          const link = document.createElement('a');
+          link.className = 'btn-download-pdf';
+          link.target = '_blank';
+          link.rel = 'noopener';
+          link.href = pdf.url;
+          link.innerHTML = `<i class="fas fa-file-pdf"></i> ${pdf.label}`;
+          downloadButtons.appendChild(link);
+        });
+      } else {
+        downloadSection.style.display = 'none';
+      }
+
+      // Show modal
+      document.getElementById('project-modal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Close modal function
+    function closeProjectModal() {
+      document.getElementById('project-modal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeProjectModal();
+    });
+
+    // =====================
+    // SCROLL SPY NAVIGATION
+    // =====================
+
+    const sections = document.querySelectorAll('section[id], .hero-container[id]');
+    const navLinks = document.querySelectorAll('.nav-links a:not(.btn-contact)');
+
+    // Observer options
+    const observerOptions = {
+      root: null,
+      rootMargin: '-100px 0px -70% 0px',
+      threshold: 0
+    };
+
+    // Create intersection observer
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.getAttribute('id');
+
+          // Remove active class from all links
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+          });
+
+          // Add active class to corresponding link
+          const activeLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+          if (activeLink && !activeLink.classList.contains('btn-contact')) {
+            activeLink.classList.add('active');
+          }
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    sections.forEach(section => {
+      sectionObserver.observe(section);
+    });
+
+    // Projects filter : deux axes indépendants (contexte, technologie).
+    // OU à l'intérieur d'un axe, ET entre les deux — c'est la seule
+    // combinaison qui donne un sens à « Entreprise + Loytec » : des projets
+    // d'entreprise faits en Loytec, et non l'union des deux ensembles.
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    const activeFilters = { contexte: [], techno: [] };
+
+    const axisResetButton = (axis) =>
+      document.querySelector('.filter-btn[data-axis="' + axis + '"][data-filter="all"]');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+        const axis = btn.dataset.axis;
+        const selected = activeFilters[axis];
+
+        if (filter === 'all') {
+          activeFilters[axis] = [];
+          document.querySelectorAll('.filter-btn[data-axis="' + axis + '"]')
+            .forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        } else {
+          axisResetButton(axis).classList.remove('active');
+
+          const position = selected.indexOf(filter);
+          if (position === -1) {
+            selected.push(filter);
+            btn.classList.add('active');
+          } else {
+            selected.splice(position, 1);
+            btn.classList.remove('active');
+          }
+
+          // Plus rien de coché sur cet axe : il ne contraint plus rien.
+          if (selected.length === 0) {
+            axisResetButton(axis).classList.add('active');
+          }
+        }
+
+        let visibles = 0;
+        projectCards.forEach(card => {
+          const tags = card.dataset.tags.split(' ');
+          const contexte = card.dataset.context;
+
+          const contexteOk = activeFilters.contexte.length === 0 ||
+            activeFilters.contexte.includes(contexte);
+          const technoOk = activeFilters.techno.length === 0 ||
+            activeFilters.techno.some(f => tags.includes(f));
+          const shouldShow = contexteOk && technoOk;
+          if (shouldShow) visibles += 1;
+
+          if (shouldShow) {
+            // Remettre la carte dans la grille avant de lancer le fondu :
+            // une transition ne part pas d'un élément en display: none. Le
+            // reflow forcé entre les deux classes est synchrone, contrairement
+            // à un requestAnimationFrame — qui ne se déclenche pas dans un
+            // rendu figé (capture PDF, onglet en arrière-plan).
+            card.classList.remove('gone');
+            void card.offsetWidth;
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+            setTimeout(() => {
+              if (card.classList.contains('hidden')) {
+                card.classList.add('gone');
+              }
+            }, 400);
+          }
+        });
+
+        // Compté sur le prédicat plutôt qu'en relisant les classes : le
+        // masquage n'est effectif qu'à la fin du fondu, 400 ms plus tard.
+        const messageVide = document.getElementById('projects-empty');
+        if (messageVide) messageVide.hidden = visibles > 0;
+      });
+    });
+
+    // Formation timeline scroll animation
+    const formationItems = document.querySelectorAll('.formation-timeline-item');
+    const formationImages = document.querySelectorAll('.formation-img');
+    const formationDots = document.querySelectorAll('.formation-dot');
+    const formationProgress = document.getElementById('formation-progress');
+
+    if (formationItems.length > 0) {
+      // Formation images are matched to timeline items via their shared
+      // data-index attribute, not their position in the DOM: some timeline
+      // entries (e.g. index 0) have no corresponding photo, so the two
+      // NodeLists can have different lengths.
+      // Le baccalauréat (index 0) n'a pas d'illustration : c'est une année sans
+      // travail à montrer. Laisser le panneau vide creusait la moitié droite de
+      // la section au chargement. On y montre donc la première illustration
+      // disponible, et la légende dit toujours de quelle année elle vient —
+      // sans elle, la photo se lirait comme celle de l'année active.
+      const formationCaption = document.getElementById('formation-caption');
+      const formationImageForIndex = (index) => {
+        const images = Array.from(formationImages);
+        return images.find(img => Number(img.dataset.index) === index)
+          || images.find(img => Number(img.dataset.index) > index)
+          || images[images.length - 1];
+      };
+      const showFormationImage = (index) => {
+        const shown = formationImageForIndex(index);
+        formationImages.forEach((img) => img.classList.toggle('active', img === shown));
+        if (formationCaption && shown) formationCaption.textContent = shown.dataset.caption || '';
+      };
+
+      // Set first item as active initially
+      formationItems[0].classList.add('active');
+      showFormationImage(0);
+      if (formationDots[0]) formationDots[0].classList.add('active');
+
+      window.addEventListener('scroll', () => {
+        const formationSection = document.getElementById('formation');
+        if (!formationSection) return;
+
+        const sectionRect = formationSection.getBoundingClientRect();
+        const sectionTop = sectionRect.top;
+        const sectionHeight = sectionRect.height;
+        const windowHeight = window.innerHeight;
+
+        // Calculate scroll progress within section
+        const scrollProgress = Math.max(0, Math.min(1,
+          (windowHeight / 2 - sectionTop) / sectionHeight
+        ));
+
+        // Update progress bar
+        if (formationProgress) {
+          formationProgress.style.height = `${scrollProgress * 100}%`;
+        }
+
+        // Determine which item should be active
+        let activeIndex = 0;
+        formationItems.forEach((item, index) => {
+          const itemRect = item.getBoundingClientRect();
+          const itemCenter = itemRect.top + itemRect.height / 2;
+
+          if (itemCenter < windowHeight * 0.6 && itemCenter > windowHeight * 0.2) {
+            activeIndex = index;
+          }
+        });
+
+        // Update all active states
+        formationItems.forEach((item, index) => {
+          item.classList.toggle('active', index === activeIndex);
+        });
+        showFormationImage(activeIndex);
+        formationDots.forEach((dot, index) => {
+          dot.classList.toggle('active', index <= activeIndex);
+        });
+      });
+    }
+
+    // Hero parallax effect
+    if (typeof gsap !== 'undefined') {
+      gsap.to("#hero-bg", {
+        scale: 0.85,
+        opacity: 0.3,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".hero-container",
+          start: "top top",
+          end: "bottom top",
+          scrub: true
+        }
+      });
+    }
+
+    // Marquee animation
+    (function () {
+      const marquee = document.querySelector('.marquee-content');
+      if (!marquee) return;
+      // Sans GSAP, il n'y a personne pour faire défiler le bandeau : on ne
+      // duplique pas son contenu, sinon il resterait doublé et immobile.
+      if (typeof gsap === 'undefined') return;
+      marquee.innerHTML = marquee.innerHTML + marquee.innerHTML;
+      const calcDuration = () => {
+        const width = marquee.getBoundingClientRect().width / 2;
+        const pxPerSecond = 50;
+        return Math.max(15, width / pxPerSecond);
+      };
+      const dur = calcDuration();
+      gsap.to(marquee, { x: () => `-${50}%`, ease: 'none', duration: dur, repeat: -1 });
+      let rt;
+      window.addEventListener('resize', () => {
+        clearTimeout(rt);
+        rt = setTimeout(() => {
+          gsap.killTweensOf(marquee);
+          gsap.to(marquee, { x: () => `-${50}%`, ease: 'none', duration: calcDuration(), repeat: -1 });
+        }, 200);
+      });
+    })();
+
+    // Fade-in animations on scroll
+    if (typeof gsap !== 'undefined') {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      fadeElements.forEach(el => {
+        ScrollTrigger.create({
+          trigger: el,
+          start: 'top 85%',
+          onEnter: () => el.classList.add('visible'),
+          once: true
+        });
+      });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offset = 80;
+          const position = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({
+            top: position,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
