@@ -206,6 +206,10 @@
             <button class="filter-btn" data-axis="techno" data-filter="python">Python</button>
             <button class="filter-btn" data-axis="techno" data-filter="kicad">KiCad</button>
             <button class="filter-btn" data-axis="techno" data-filter="web">Web</button>
+            <button class="filter-btn" data-axis="techno" data-filter="labview">LabVIEW</button>
+            <button class="filter-btn" data-axis="techno" data-filter="wago">WAGO</button>
+            <button class="filter-btn" data-axis="techno" data-filter="energie">Énergie</button>
+            <button class="filter-btn" data-axis="techno" data-filter="electronique">Électronique</button>
           </div>
         </div>
 
@@ -414,6 +418,215 @@
                 <span class="tag">L-Vis</span>
                 <span class="tag">Modbus</span>
                 <span class="tag">Aléa chantier</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAÉ 3.01 / 3.02 — Moteur DC piloté par interface web -->
+          <div class="project-card" data-context="universitaire" data-tags="web labview" data-project="sae3-moteur-web"
+            onclick="openProjectModal('sae3-moteur-web')" style="cursor: pointer;">
+            <div class="project-image schema-img">
+              <img src="assets/img/sae3-esp8266.png" alt="Brochage du module ESP8266 utilisé comme serveur web embarqué">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>SAÉ 3.01 / 3.02 — Moteur DC piloté par interface web</h3>
+              <p>Variation d'un moteur à courant continu par PWM, commandée depuis une page web embarquée sur ESP8266 et depuis un client LabVIEW sur serveur TCP.</p>
+              <div class="project-tags">
+                <span class="tag">ESP8266</span>
+                <span class="tag">Serveur web</span>
+                <span class="tag">LabVIEW</span>
+                <span class="tag">TCP/IP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Réception et décodage ADS-B -->
+          <div class="project-card" data-context="universitaire" data-tags="python" data-project="adsb"
+            onclick="openProjectModal('adsb')" style="cursor: pointer;">
+            <div class="project-image">
+              <img src="assets/img/adsb-analyseur.jpg" alt="Analyseur de réseau vectoriel affichant la courbe de ROS de l'antenne, marqueurs autour de 1 GHz">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Réception et décodage ADS-B</h3>
+              <p>Capture des trames de position d'aéronefs par radio logicielle, décodage en Python, et vérification de l'adaptation d'antenne au NanoVNA.</p>
+              <div class="project-tags">
+                <span class="tag">GNU Radio</span>
+                <span class="tag">Python</span>
+                <span class="tag">SDR</span>
+                <span class="tag">NanoVNA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Supervision d'un moteur asynchrone -->
+          <div class="project-card" data-context="universitaire" data-tags="labview" data-project="supervision-moteur"
+            onclick="openProjectModal('supervision-moteur')" style="cursor: pointer;">
+            <div class="project-image schema-img">
+              <img src="assets/img/supervision-moteur.png" alt="Face avant LabVIEW de supervision du moteur asynchrone : jauge de vitesse, commandes et voyants">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Supervision d'un moteur asynchrone</h3>
+              <p>Interface de conduite en modes local et distant : sens de marche, consigne de vitesse, voyants d'état et pilotage des sorties TOR.</p>
+              <div class="project-tags">
+                <span class="tag">LabVIEW</span>
+                <span class="tag">Supervision</span>
+                <span class="tag">Variateur</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SAÉ 4.01 — Compteur d'énergie connecté Shelly EM -->
+          <div class="project-card" data-context="universitaire" data-tags="energie" data-project="shelly-em"
+            onclick="openProjectModal('shelly-em')" style="cursor: pointer;">
+            <div class="project-image">
+              <img src="assets/img/shelly-em.jpg" alt="Module de comptage d'énergie Shelly EM et ses pinces ampèremétriques">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>SAÉ 4.01 — Compteur d'énergie connecté Shelly EM</h3>
+              <p>Prise en main d'un module de comptage communicant : raccordement, mise en service et relevé des consommations.</p>
+              <div class="project-tags">
+                <span class="tag">Shelly EM</span>
+                <span class="tag">Comptage</span>
+                <span class="tag">Wi-Fi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Installation photovoltaïque autonome -->
+          <div class="project-card" data-context="universitaire" data-tags="energie" data-project="installation-pv"
+            onclick="openProjectModal('installation-pv')" style="cursor: pointer;">
+            <div class="project-image schema-img">
+              <img src="assets/img/installation-pv.png" alt="Synoptique de l'installation photovoltaïque autonome étudiée, avec régulateur MPPT, parc de batteries et onduleur">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Installation photovoltaïque autonome</h3>
+              <p>Analyse et justification du dimensionnement d'une installation en site isolé : régulateur MPPT, parc de batteries, onduleur-chargeur et protections.</p>
+              <div class="project-tags">
+                <span class="tag">Photovoltaïque</span>
+                <span class="tag">MPPT</span>
+                <span class="tag">Victron</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alternateur synchrone et couplage au réseau -->
+          <div class="project-card" data-context="universitaire" data-tags="energie" data-project="alternateur"
+            onclick="openProjectModal('alternateur')" style="cursor: pointer;">
+            <div class="project-image schema-img">
+              <img src="assets/img/alternateur-cablage.png" alt="Schéma de câblage de l'excitation de l'alternateur synchrone">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Alternateur synchrone et couplage au réseau</h3>
+              <p>Caractérisation d'un alternateur, détermination du modèle de Behn-Eschenburg, étude en charge puis couplage au réseau.</p>
+              <div class="project-tags">
+                <span class="tag">Machine synchrone</span>
+                <span class="tag">Behn-Eschenburg</span>
+                <span class="tag">Couplage réseau</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TP d'automatisme — château d'eau et bras manipulateur -->
+          <div class="project-card" data-context="universitaire" data-tags="wago" data-project="automatisme-but1"
+            onclick="openProjectModal('automatisme-but1')" style="cursor: pointer;">
+            <div class="project-image schema-img">
+              <img src="assets/img/bras-pneumatique.png" alt="Schéma pneumatique des vérins et distributeurs du bras manipulateur">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>TP d'automatisme — château d'eau et bras manipulateur</h3>
+              <p>Deux systèmes automatisés en première année : la gestion de deux pompes de forage sur niveaux, et le cycle d'un bras pneumatique programmé sous CoDeSys.</p>
+              <div class="project-tags">
+                <span class="tag">WAGO 750-849</span>
+                <span class="tag">CoDeSys</span>
+                <span class="tag">Grafcet</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Astable 2 kHz et filtre passe-bas du 2ᵉ ordre -->
+          <div class="project-card" data-context="universitaire" data-tags="electronique" data-project="astable-filtre"
+            onclick="openProjectModal('astable-filtre')" style="cursor: pointer;">
+            <div class="project-image schema-img">
+              <img src="assets/img/astable-oscillo.png" alt="Relevé à l'oscilloscope du signal carré de l'astable et du signal filtré">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Astable 2 kHz et filtre passe-bas du 2ᵉ ordre</h3>
+              <p>Génération d'un signal carré par astable à amplificateur opérationnel, puis étude du filtrage : spectre, diagramme de Bode, résonance et bande passante.</p>
+              <div class="project-tags">
+                <span class="tag">Amplificateur op.</span>
+                <span class="tag">Filtre Sallen-Key</span>
+                <span class="tag">Bode</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transformateurs monophasés -->
+          <div class="project-card" data-context="universitaire" data-tags="energie" data-project="transformateur"
+            onclick="openProjectModal('transformateur')" style="cursor: pointer;">
+            <div class="project-image schema-img">
+              <img src="assets/img/transformateur-essai.png" alt="Schéma de câblage de l'essai en charge du transformateur monophasé">
+              <div class="project-overlay">
+                <span class="project-context">Universitaire</span>
+              </div>
+              <div class="project-click-hint">
+                <i class="fas fa-expand"></i>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Transformateurs monophasés</h3>
+              <p>Essais à vide, en court-circuit et en charge pour établir le schéma équivalent d'un transformateur et vérifier la validité du modèle théorique.</p>
+              <div class="project-tags">
+                <span class="tag">Essais</span>
+                <span class="tag">Modèle de Kapp</span>
+                <span class="tag">Mesures</span>
               </div>
             </div>
           </div>
@@ -1973,6 +2186,260 @@
           <p><strong>La dépendance aux autres corps d'état :</strong> la mise en service arrive en fin de chaîne et hérite des retards accumulés en amont. Ce n'est pas une fatalité à subir, c'est un paramètre à intégrer dans un planning.</p>
         `
       },
+      'sae3-moteur-web': {
+        title: "SAÉ 3.01 / 3.02 — Moteur à courant continu piloté par interface web",
+        context: 'Universitaire',
+        tags: ['ESP8266', 'Serveur web', 'LabVIEW', 'TCP/IP', 'PWM'],
+        pdfUrls: [
+          { label: "Cahier des charges fonctionnel", url: './assets/docs/sae3-cahier-des-charges.pdf' },
+          { label: "Recette 1 — point d'accès et serveur web (Word)", url: './assets/docs/sae3-recette-1.docx' },
+          { label: "Recette 2 — client LabVIEW sur serveur TCP (Word)", url: './assets/docs/sae3-recette-2.docx' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> SAÉ 3.01 et 3.02 de deuxième année, « Intégration et programmation d'un système automatisé », menée en binôme.</p>
+          <p><strong>Objectif :</strong> faire varier la vitesse d'un moteur à courant continu par un signal PWM, et rendre cette commande accessible de deux façons — depuis une page web, et depuis un logiciel développé sur LabVIEW.</p>
+          <p><strong>Contrainte structurante :</strong> le serveur web devait être embarqué sur l'ESP8266 lui-même, et le point d'accès Wi-Fi supporter plusieurs utilisateurs simultanés sans perte de données.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Génération du signal PWM, commandable par boutons et curseurs</li>
+            <li>Serveur web embarqué sur l'ESP8266, accessible depuis n'importe quelle machine connectée au point d'accès</li>
+            <li>Comptage des impulsions du codeur par interruption, pour la mesure de vitesse</li>
+            <li>Serveur TCP acceptant plusieurs clients et interprétant les commandes du protocole</li>
+            <li>Client LabVIEW se connectant au serveur TCP pour envoyer et recevoir des requêtes</li>
+            <li>Rédaction des recettes : chaque test unitaire avec son objectif et ses critères de réussite</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Moteur pilotable indifféremment depuis la page web ou depuis le client LabVIEW</li>
+            <li>Deux campagnes de recette formalisées — connectivité du point d'accès et du serveur web, puis dialogue LabVIEW sur TCP</li>
+            <li>Cahier des charges fonctionnel rédigé en amont : besoins, contraintes, calendrier et prestations attendues</li>
+          </ul>
+        `,
+        ressenti: ''
+      },
+      'adsb': {
+        title: "Réception et décodage ADS-B",
+        context: 'Universitaire',
+        tags: ['GNU Radio', 'Python', 'SDR', 'NanoVNA', 'Antenne'],
+        pdfUrls: [
+          { label: "Compte-rendu final — ADS-B", url: './assets/docs/sae4-adsb-compte-rendu.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> projet de deuxième année sur la surveillance d'aéronefs en temps réel par le système ADS-B, qui diffuse automatiquement la position des avions depuis leurs récepteurs GPS embarqués.</p>
+          <p><strong>Chaîne complète :</strong> capter le signal, le décoder, extraire l'information, puis vérifier que l'antenne était bien adaptée — la qualité de réception dépend d'abord de là.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Capture des signaux ADS-B par radio logicielle sous GNU Radio</li>
+            <li>Décodage de la trame 17 et extraction des identifiants ICAO et des numéros de vol, en Python</li>
+            <li>Recoupement des résultats avec FlightRadar pour valider le décodage</li>
+            <li>Mesure d'adaptation d'impédance de l'antenne à l'analyseur de réseau vectoriel NanoVNA-F</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Trames captées et décodées, identifiants d'aéronefs extraits et confirmés par recoupement</li>
+            <li>Adaptation d'antenne vérifiée, condition d'une réception exploitable</li>
+            <li>Démonstration qu'un matériel accessible suffit à obtenir des résultats précis sur ce type de mesure</li>
+          </ul>
+        `,
+        ressenti: ''
+      },
+      'supervision-moteur': {
+        title: "Supervision d'un moteur asynchrone",
+        context: 'Universitaire',
+        tags: ['LabVIEW', 'Supervision', 'Variateur', 'Modes local / distant'],
+        pdfUrls: [
+          { label: "Compte-rendu — supervision du moteur asynchrone", url: './assets/docs/tp-supervision-moteur-asynchrone.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> travaux pratiques de deuxième année, en binôme, sur la conduite à distance d'un moteur asynchrone piloté par variateur.</p>
+          <p><strong>Principe :</strong> deux modes de commande coexistent. En local, le pupitre physique garde la main et l'interface ne fait que visualiser. En distant, l'interface devient pilotable.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Face avant de supervision : sens de marche, consigne de vitesse, voyants d'état et arrêt d'urgence</li>
+            <li>Visualisation du feu tricolore et du sens d'enclenchement du moteur, commune aux deux modes</li>
+            <li>En mode distant : consigne de vitesse modifiable, boutons du pupitre rendus cliquables et cinq sorties tout ou rien pilotables indépendamment</li>
+            <li>Vérification du bon fonctionnement de chaque mode avant bascule</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Conduite du moteur possible depuis l'interface comme depuis le pupitre, sans conflit entre les deux</li>
+            <li>Séparation nette entre ce qui se visualise et ce qui se commande, selon le mode actif</li>
+          </ul>
+        `,
+        ressenti: ''
+      },
+      'shelly-em': {
+        title: "SAÉ 4.01 — Compteur d'énergie connecté Shelly EM",
+        context: 'Universitaire',
+        tags: ['Shelly EM', 'Comptage', 'Wi-Fi', 'Mesure'],
+        pdfUrls: [
+          { label: "Fiche de prise en main — Shelly EM", url: './assets/docs/sae4-shelly-em.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> SAÉ 4.01 de deuxième année. Prise en main d'un module de comptage d'énergie communicant, depuis son déballage jusqu'au relevé de mesures.</p>
+          <p><strong>Intérêt :</strong> c'est le maillon qui manque à beaucoup d'installations — sans compteur, une régulation montre comment elle travaille, jamais ce qu'elle coûte.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Raccordement du module et de ses pinces ampèremétriques</li>
+            <li>Mise en service et configuration de la liaison sans fil</li>
+            <li>Relevé et lecture des consommations mesurées</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Module opérationnel et consommations remontées</li>
+            <li>Fiche de prise en main produite, réutilisable sur une autre installation</li>
+          </ul>
+        `,
+        ressenti: ''
+      },
+      'installation-pv': {
+        title: "Installation photovoltaïque autonome",
+        context: 'Universitaire',
+        tags: ['Photovoltaïque', 'MPPT', 'Victron', 'Site isolé'],
+        pdfUrls: [
+          { label: "Compte-rendu — dimensionnement de l'installation photovoltaïque", url: './assets/docs/td-installation-photovoltaique.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> étude dirigée de deuxième année portant sur l'installation photovoltaïque autonome réellement en service dans une salle de l'IUT.</p>
+          <p><strong>Angle retenu :</strong> analyser et <em>justifier</em> le dimensionnement d'après les équipements effectivement installés, plutôt que de dimensionner sur le papier.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Distinction entre production en site isolé, non raccordée au secteur, et autoconsommation raccordée</li>
+            <li>Analyse du rôle du régulateur de charge MPPT dans la recharge du parc de batteries</li>
+            <li>Étude du parc de batteries plomb, de l'onduleur-chargeur et de la distribution</li>
+            <li>Relevé des protections et de leur dimensionnement, des fusibles aux sectionneurs</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Dimensionnement de la chaîne complète justifié équipement par équipement</li>
+            <li>Compréhension du rôle de chaque organe dans une installation hors réseau</li>
+          </ul>
+        `,
+        ressenti: ''
+      },
+      'alternateur': {
+        title: "Alternateur synchrone et couplage au réseau",
+        context: 'Universitaire',
+        tags: ['Machine synchrone', 'Behn-Eschenburg', 'Couplage réseau', 'Essais'],
+        pdfUrls: [
+          { label: "Compte-rendu — alternateur synchrone", url: './assets/docs/tp1-alternateur-synchrone-but2.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> travaux pratiques d'énergie de deuxième année, sur une machine synchrone à deux paires de pôles.</p>
+          <p><strong>Objectif :</strong> déterminer les éléments du modèle équivalent, puis passer de la machine seule à la machine couplée au réseau.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Relevé des grandeurs nominales en couplage étoile et en couplage triangle</li>
+            <li>Essais de caractérisation pour déterminer les éléments du modèle de Behn-Eschenburg</li>
+            <li>Étude du comportement en charge de l'alternateur</li>
+            <li>Couplage au réseau</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Modèle équivalent établi et confronté aux mesures</li>
+            <li>Conditions de couplage au réseau vérifiées avant réalisation</li>
+          </ul>
+        `,
+        ressenti: ''
+      },
+      'automatisme-but1': {
+        title: "TP d'automatisme — château d'eau et bras manipulateur",
+        context: 'Universitaire',
+        tags: ['WAGO 750-849', 'CoDeSys', 'Grafcet', 'Pneumatique'],
+        pdfUrls: [
+          { label: "Compte-rendu — gestion d'un château d'eau", url: './assets/docs/tp2-chateau-eau-but1.pdf' },
+          { label: "Compte-rendu — bras manipulateur pneumatique", url: './assets/docs/tp3-bras-manipulateur-but1.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> deux travaux pratiques d'automatisme de première année, premiers contacts avec la programmation d'automates.</p>
+          <p><strong>Château d'eau :</strong> alimenter une commune depuis deux pompes de forage, en pilotant leur marche sur les niveaux d'eau du réservoir de 1800 m³ et des forages — une pompe ne doit jamais tourner à sec.</p>
+          <p><strong>Bras manipulateur :</strong> un bras pneumatique saisit, transfère, matrice puis évacue des pièces cylindriques, sur automate WAGO 750-849.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Lecture des schémas pneumatiques et identification des vérins et distributeurs</li>
+            <li>Justification du choix d'un distributeur monostable pour la pince, afin qu'elle se referme dès que la commande disparaît</li>
+            <li>Programmation des cycles sous CoDeSys, à partir de la liste des entrées et sorties</li>
+            <li>Optimisation du cycle, ajout d'un mode manuel et d'un comptage des cycles de production</li>
+            <li>Gestion des niveaux bas et haut du réservoir et des forages, pour interdire le fonctionnement à sec</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Les deux systèmes exécutent leur cycle complet</li>
+            <li>Sécurités de niveau respectées sur le château d'eau, position de repos maîtrisée sur la pince</li>
+            <li>Premiers réflexes d'automaticien : partir du schéma, puis remonter vers le programme</li>
+          </ul>
+        `,
+        ressenti: ''
+      },
+      'astable-filtre': {
+        title: "Astable 2 kHz et filtre passe-bas du 2ᵉ ordre",
+        context: 'Universitaire',
+        tags: ['Amplificateur opérationnel', 'Filtre Sallen-Key', 'Bode', 'Spectre'],
+        pdfUrls: [
+          { label: "Compte-rendu — astable et filtrage analogique", url: './assets/docs/tp2-astable-filtre-but1.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> travaux pratiques d'électronique de première année.</p>
+          <p><strong>Objectif :</strong> observer ce que le filtrage analogique fait réellement à un signal, en partant d'un carré généré par un astable à amplificateur opérationnel alimenté en ±10 V.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Mesure des tensions de seuil, de la période et de la fréquence du signal carré en sortie de l'astable</li>
+            <li>Relevé du spectre du signal carré</li>
+            <li>Étude théorique du filtre passe-bas du 2ᵉ ordre en structure Sallen-Key, et calcul des composants</li>
+            <li>Tracé du diagramme de Bode : fréquence de résonance, gain à la résonance, gain statique, bande passante et pente des asymptotes</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Écart entre valeurs théoriques et valeurs mesurées calculé et commenté</li>
+            <li>Effet du filtrage vérifié à l'oscilloscope, du carré au signal filtré</li>
+          </ul>
+        `,
+        ressenti: ''
+      },
+      'transformateur': {
+        title: "Transformateurs monophasés",
+        context: 'Universitaire',
+        tags: ['Essais', 'Modèle de Kapp', 'Mesures', 'Schéma équivalent'],
+        pdfUrls: [
+          { label: "Compte-rendu — transformateurs monophasés", url: './assets/docs/tp5-transformateur-monophase.pdf' }
+        ],
+        contexte: `
+          <p><strong>Cadre :</strong> travaux pratiques d'énergie de première année, sur un transformateur à deux secondaires câblés en série.</p>
+          <p><strong>Valeurs nominales :</strong> tension primaire 230 V, courant secondaire 9 A.</p>
+          <p><strong>Objectif :</strong> établir le schéma équivalent du transformateur par une série d'essais, puis vérifier la validité du modèle théorique.</p>
+        `,
+        interventions: `
+          <ul>
+            <li>Essai à secondaire ouvert, avec bobine de 10 spires pour améliorer la mesure de puissance absorbée</li>
+            <li>Essai en court-circuit pour déterminer les éléments série</li>
+            <li>Essai en charge et comparaison avec le modèle</li>
+            <li>Construction du modèle simplifié de Kapp</li>
+          </ul>
+        `,
+        resultats: `
+          <ul>
+            <li>Schéma équivalent établi à partir des mesures</li>
+            <li>Validité du modèle théorique confrontée aux relevés en charge</li>
+          </ul>
+        `,
+        ressenti: ''
+      },
       'variateur-vitesse': {
         title: 'Variateur de Vitesse Connecté',
         context: 'Universitaire',
@@ -2073,11 +2540,18 @@
       const tagsContainer = document.getElementById('modal-tags');
       tagsContainer.innerHTML = project.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
 
-      // Content sections
-      document.getElementById('modal-contexte').innerHTML = project.contexte;
-      document.getElementById('modal-interventions').innerHTML = project.interventions;
-      document.getElementById('modal-resultats').innerHTML = project.resultats;
-      document.getElementById('modal-ressenti').innerHTML = project.ressenti;
+      // Content sections. Une section sans contenu est masquée avec son
+      // titre : tous les projets n'appellent pas un ressenti personnel — sur
+      // un TP encadré, il n'y a rien d'honnête à écrire sous cet intitulé, et
+      // un titre suivi du vide se lit comme une page inachevée.
+      [['modal-contexte', project.contexte],
+       ['modal-interventions', project.interventions],
+       ['modal-resultats', project.resultats],
+       ['modal-ressenti', project.ressenti]].forEach(([id, contenu]) => {
+        const cible = document.getElementById(id);
+        cible.innerHTML = contenu || '';
+        cible.closest('.modal-section').style.display = (contenu && contenu.trim()) ? '' : 'none';
+      });
 
       // PDF download(s) — un projet peut avoir plusieurs preuves (ex. deux
       // phases de SAÉ), chacune avec son propre libellé et son propre bouton.
